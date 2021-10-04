@@ -14,10 +14,49 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#container{
+.container{
   padding: 5px 0;
   width: 80%;
   margin: auto;
-  display: flex;
-  align-items: center;
 }
+
+h2, h2 a{
+  color: $font-main-title-color;
+  margin-bottom: $spacement-between;
+}
+
+p{
+  color: $font-secondary-title-color
+}
+
+:root{
+  --animatedUnderlineHeight: 0.3rem;
+  --animatedUnderlineBgColor: #f6f666;
+}
+
+.animated-underline{
+  --uiAnimatedUnderlineWidth: var(--animatedUnderlineWidth, 100%);
+  --uiAnimatedUnderlineHeight: var(--animatedUnderlineHeight, 100px);
+  --uiAnimatedUnderlineBgColor: var(--animatedUnderlineBgColor, currentColor);
+  --uiAnimatedUnderlinePositionX: var(--animatedUnderlinePositionX, left);
+  --uiAnimatedUnderlinePositionY: var(--animatedUnderlinePositionY, bottom);
+  --animatedUnderlineWidth: 100%;
+
+  --rLinkDisplay: inline;
+
+  background-image: linear-gradient(0, var(--uiAnimatedUnderlineBgColor) 0, var(--uiAnimatedUnderlineBgColor));
+  background-size: var(--uiAnimatedUnderlineWidth) var(--uiAnimatedUnderlineHeight);
+  background-position: var(--uiAnimatedUnderlinePositionX) var(--uiAnimatedUnderlinePositionY);
+  background-repeat: no-repeat;
+
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+
+  will-change: background-size;
+  transition: background-size .25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.animated-underline:hover{
+  --animatedUnderlineHeight: 90%;
+}
+
