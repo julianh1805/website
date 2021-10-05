@@ -54,6 +54,7 @@ export default {
            text-align: center;
            padding: 1em;
            border-radius: 2px;
+           transition-duration: 700ms;
            h4{
              margin: 8px 0;
            }
@@ -61,7 +62,7 @@ export default {
              width: 84px;
            }
            &:hover{
-             transition: 100ms;
+             transition: 700ms;
              box-shadow: 10px 5px 70px rgba(34, 47, 114, 0.2);
            }
          }
