@@ -1,6 +1,8 @@
 <template>
   <Presentation></Presentation>
+  <hr class="lg-separator">
   <Qualites></Qualites>
+  <hr class="lg-separator">
 </template>
 
 <script>

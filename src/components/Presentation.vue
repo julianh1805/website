@@ -2,14 +2,14 @@
   <div id="presentation">
     <div class="container">
       <div class="grid">
-        <div class="section">
+        <div class="row">
           <img class="corner-tl" :src="require('../assets/corner-tl.png')" />
-          <div class="photo-profil">
-            <img :src="require('../assets/profil.png')" />
+          <div class="anim">
+            <img class="photo-profil" :src="require('../assets/profil.png')" />
+            <img class="corner-br" :src="require('../assets/corner-br.png')" />
           </div>
-          <img class="corner-br" :src="require('../assets/corner-br.png')" />
         </div>
-        <div class="section">
+        <div class="row">
           <h2>
             <a class="r-link animated-underline animated-underline">
               Développeur full-stack junior en région nantaise (Bretagne). "Mes lignes de code ne définissent pas qui je suis"
@@ -57,25 +57,25 @@ export default {
     display: grid;
     grid-gap: 4rem;
     grid-template-columns: repeat(1, 1fr);
-    .section{
+    .row{
       .corner-tl{
         position: absolute;
         width: 50px;
         z-index: 1;
       }
       .corner-br{
-        position: relative;
-        top: -3px;
         width: 50px;
-        float: right;
+        position: absolute;
+        bottom: -30px;
       }
-      .photo-profil{
+      .anim{
         width: 90%;
         margin: auto;
         position: relative;
         top: 28px;
-        img{
+        .photo-profil{
           width: 100%;
+          position: relative;
         }
       }
       .description{

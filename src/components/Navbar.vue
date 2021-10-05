@@ -24,6 +24,8 @@ export default {
 <style lang="scss">
 header{
   background: $bg-radient;
+  .container{
+    padding: 5px 0;
   nav#navbar{
     display: flex;
     justify-content: space-between;
@@ -69,6 +71,7 @@ header{
         transition: width 175ms cubic-bezier(.4,.25,.3,1);
       }
     }
+  }
   }
   }
 }
