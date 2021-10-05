@@ -3,7 +3,7 @@
     <div id="full-bg">
       <div class="center">
         <h4 class="hook">C'est le moment de faire connaisance. <br>Faites le premier pas</h4>
-        <p class="pub">(cet espace n'est pas sponsorisé par Ikea)</p>
+        <p class="pub">(malgré les apparences, cet espace n'est pas sponsorisé par Ikea)</p>
         <button class="draw">Contacter Julian Husson</button>
       </div>
     </div>

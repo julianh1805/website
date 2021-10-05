@@ -22,8 +22,8 @@
         </div>
         <div class="qlte q3">
           <img :src="require('../assets/teamwork-icon.png')"/>
-          <h4>Lorem ipsum lorem</h4>
-          <p>Hola que tal estas yo bien hehe toma ya que bueno tio</p>
+          <h4>Esprit d'équipe</h4>
+          <p>Malgré que je sois un loup solitaire, je ne suis rien sans les personnes qui m'entourent</p>
         </div>
         <div class="qlte q4">
           <img :src="require('../assets/teamwork-icon.png')"/>

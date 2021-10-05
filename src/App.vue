@@ -1,5 +1,7 @@
 <template>
-  <Navbar></Navbar>
+  <header>
+    <Navbar></Navbar>
+  </header>
   <main>
     <router-view/>
   </main>
@@ -25,3 +27,14 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+header{
+  background: $bg-radient;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+</style>
