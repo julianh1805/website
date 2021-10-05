@@ -3,8 +3,8 @@
     <div class="container">
       <div class="grid">
         <div class="row">
-          <img class="corner-tl" :src="require('../assets/corner-tl.png')" />
           <div class="anim">
+            <img class="corner-tl" :src="require('../assets/corner-tl.png')" />
             <img class="photo-profil" :src="require('../assets/profil.png')" />
             <img class="corner-br" :src="require('../assets/corner-br.png')" />
           </div>
@@ -58,25 +58,33 @@ export default {
     grid-gap: 4rem;
     grid-template-columns: repeat(1, 1fr);
     .row{
-      .corner-tl{
-        position: absolute;
-        width: 50px;
-        z-index: 1;
-      }
-      .corner-br{
-        width: 50px;
-        position: absolute;
-        bottom: -30px;
-      }
       .anim{
         width: 90%;
         margin: auto;
         position: relative;
         top: 28px;
+        .corner-tl{
+          position: absolute;
+          width: 50px;
+          transition: transform 0.8s;
+          z-index: 1;
+        }
         .photo-profil{
           width: 100%;
           position: relative;
         }
+        .corner-br{
+          width: 50px;
+          position: absolute;
+          bottom: -30px;
+          transition: transform 0.8s;
+        }
+      }
+      .anim:hover .corner-br{
+        transform: translate(20px, 20px);
+      }
+      .anim:hover .corner-tl{
+        transform: translate(-20px, -20px);
       }
       .description{
         font-size: 18px;
