@@ -63,31 +63,22 @@ export default {
     .row{
       .anim{
         width: 90%;
-        margin: auto;
+        margin: auto auto 35px auto;
         position: relative;
         top: 28px;
         .corner-tl{
           position: absolute;
-          width: 50px;
           transition: transform 0.8s;
           z-index: 1;
         }
         .photo-profil{
-          width: 100%;
+          width: 90%;
           position: relative;
         }
         .corner-br{
-          width: 50px;
           position: absolute;
-          bottom: -30px;
           transition: transform 0.8s;
         }
-      }
-      .anim:hover .corner-br{
-        transform: translate(20px, 20px);
-      }
-      .anim:hover .corner-tl{
-        transform: translate(-20px, -20px);
       }
       .description{
         font-size: 18px;
@@ -109,7 +100,32 @@ export default {
   }
 }
 
-@media (min-width: 700px) {
-  #presentation .grid { grid-template-columns: minmax(min-content, 2fr) minmax(min-content, 4fr); }
+@media (min-width: 276px) {
+   .corner-tl{
+     width: 42px;
+     left: -5%;
+     top: -5%;
+   }
+
+  .corner-br{
+    width: 42px;
+    bottom: -9%;
+    right: -6%;
+  }
+
+  .anim:hover .corner-br{
+    transform: translate(10px, 10px);
+  }
+
+  .anim:hover .corner-tl{
+    transform: translate(-10px, -10px);
+  }
 }
+
+@media (min-width: 601px) {
+  #presentation .grid {
+    grid-template-columns: minmax(min-content, 2fr) minmax(min-content, 4fr);
+  }
+}
+
 </style>

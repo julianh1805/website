@@ -59,7 +59,7 @@ export default {
 
   .terminal_task-bar {
     height: 2rem;
-    padding-left: .5rem;
+    padding: 0 .5rem;
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
     background-color: #efefef;
@@ -108,12 +108,12 @@ export default {
       font-size: 13px;
       color: #3d3d3d;
       position: relative;
-      left: -60px;
+      left: -28px;
     }
   }
 
   .terminal_window {
-    height: 17.5rem;
+    min-height: 17.5rem;
     padding: 1.5rem;
     border-bottom-right-radius: .5rem;
     border-bottom-left-radius: .5rem;
@@ -297,5 +297,7 @@ export default {
     opacity: 1
   }
 }
+
+
 
 </style>

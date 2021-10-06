@@ -42,14 +42,13 @@ export default {
 </script>
 
 <style lang="scss">
-   #qualites{
+#qualites{
      .container{
        .grid{
          width: 100%;
          margin: 0 auto;
          display: grid;
          grid-gap: 4rem;
-         grid-template-columns: repeat(4, 1fr);
          .qlte{
            text-align: center;
            padding: 1em;
@@ -73,5 +72,22 @@ export default {
          }
        }
      }
-   }
+}
+@media (min-width: 276px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 576px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 </style>
