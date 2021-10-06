@@ -24,8 +24,8 @@
             France pour poursuivre mes études dans le but de devenir développeur full-stack, vraiment full full.
           </p>
           <div class="cta">
-            <button class="draw-main trans-main to-formation" @click="click">Visiter mon palmarès</button>
-            <button class="draw-main trans-main to-contact" @click="click">Me contacter</button>
+            <button class="draw-main trans-main to-formation" @click="goToFormation">Visiter mon palmarès</button>
+            <button class="draw-main trans-main to-contact" @click="goToContact">Me contacter</button>
           </div>
         </div>
       </div>
@@ -37,9 +37,12 @@
 export default {
   name: 'Presentation',
   methods: {
-    click(){
-      console.log("HEHEHE")
-    }
+      goToFormation(){
+        this.$router.push({ path: '/formation'})
+      },
+      goToContact(){
+        this.$router.push({ path: '/contact'})
+      }
   }
 }
 </script>

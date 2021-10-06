@@ -11,14 +11,14 @@
       </div>
       <div class="grid">
         <div class="qlte q1">
-          <img :src="require('../assets/teamwork-icon.png')"/>
-          <h4>Lorem ipsum lorem</h4>
-          <p>Hola que tal estas yo bien hehe toma ya que bueno tio</p>
+          <img :src="require('../assets/ambition-determine-icon.png')"/>
+          <h4>Ambitieux et determiné</h4>
+          <p>Les rêves sont comme les buts. C'est bien d'en vouloir, mais il faut se les procurer</p>
         </div>
         <div class="qlte q2">
-          <img :src="require('../assets/teamwork-icon.png')"/>
-          <h4>Lorem ipsum lorem</h4>
-          <p>Hola que tal estas yo bien hehe toma ya que bueno tio</p>
+          <img :src="require('../assets/force-proposition-icon.png')"/>
+          <h4>Fort de proposition</h4>
+          <p>J'aime bien découvrir, apprendre, partager et appliquer. Dans cet ordre</p>
         </div>
         <div class="qlte q3">
           <img :src="require('../assets/teamwork-icon.png')"/>
@@ -26,9 +26,9 @@
           <p>Malgré que je sois un loup solitaire, je ne suis rien sans les personnes qui m'entourent</p>
         </div>
         <div class="qlte q4">
-          <img :src="require('../assets/teamwork-icon.png')"/>
-          <h4>Lorem ipsum lorem</h4>
-          <p>Hola que tal estas yo bien hehe toma ya que bueno tio</p>
+          <img :src="require('../assets/overwork-icon.png')"/>
+          <h4>(Trop) perfectioniste</h4>
+          <p>A force de vouloir toucher de trop près les étoiles, on risque de s'aveugler</p>
         </div>
       </div>
     </div>
@@ -56,10 +56,15 @@ export default {
            border-radius: 2px;
            transition-duration: 700ms;
            h4{
+             color: $font-main-title-color;
+             font-size: 18px;
              margin: 8px 0;
            }
            img{
              width: 84px;
+           }
+           + .q3 img{
+             width: 83px;
            }
            &:hover{
              transition: 700ms;

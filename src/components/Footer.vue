@@ -137,20 +137,20 @@ button{
   }
 
   &:hover::before {
-    border-top-color: $font-underlined-color; // Make borders visible
+    border-top-color: $font-underlined-color;
     border-right-color: $font-underlined-color;
     transition:
-        width 0.25s ease-out, // Width expands first
-        height 0.25s ease-out 0.25s; // And then height
+        width 0.25s ease-out,
+        height 0.25s ease-out 0.25s;
   }
 
   &:hover::after {
-    border-bottom-color: $font-underlined-color; // Make borders visible
+    border-bottom-color: $font-underlined-color;
     border-left-color: $font-underlined-color;
     transition:
-        border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
-        width 0.25s ease-out 0.5s, // And then exanding width
-        height 0.25s ease-out 0.75s; // And finally height
+        border-color 0s ease-out 0.5s,
+        width 0.25s ease-out 0.5s,
+        height 0.25s ease-out 0.75s;
   }
 }
 </style>
