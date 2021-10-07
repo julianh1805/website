@@ -1,5 +1,4 @@
 <template>
-  <p>QUALITES</p>
 </template>
 
 <script>
