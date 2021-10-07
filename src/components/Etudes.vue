@@ -74,7 +74,7 @@ export default {
         { id: "iesb", image: require('../assets/ies-bendinat-logo.png'), titre: 'Double délivrance du baccalauréat', delivre: 'Délivré par le Ministère de l’Education Nationale  en juin 2017'}
       ],
       formations : [
-        { id: "epsi", image: require('../assets/epsi-logo.jpg'), ecole: 'EPSI', diplome: 'Expert en Informatique et Système d’Information, Ingénierie informatique', annee: '2020-2022', description: "Études & Développement : <br>- Gérer des projets de conception de solutions applicatives dans un environnement agile <br>- Concevoir et développer des solutions applicatives mobiles et embarquées <br>- Concevoir des solutions utilisant l’intelligence artificielle <br>- Concevoir une architecture de Business Intelligence <br>- Gérer et optimiser un système d’information"},
+        { id: "epsi", image: require('../assets/epsi-logo.jpg'), ecole: 'EPSI', diplome: 'Expert en Informatique et Système d’Information, Ingénierie informatique', annee: '2020-2022 (en cours)', description: "Études & Développement : <br>- Gérer des projets de conception de solutions applicatives dans un environnement agile <br>- Concevoir et développer des solutions applicatives mobiles et embarquées <br>- Concevoir des solutions utilisant l’intelligence artificielle <br>- Concevoir une architecture de Business Intelligence <br>- Gérer et optimiser un système d’information"},
         { id: "wis", image: require('../assets/wis-logo.jpg'), ecole: 'WIS', diplome: 'Gestion du Web / multimédia et webmaster', annee: '2017-2020', description: "Conception & Intégration d'Applications web & mobiles :<br>- Développement Front-end Web<br>- Serveur Web & Pilotage page web<br><br>Communication Digitale & Stratégie Relation Clients :<br>- Communication digitale & Réseaux sociaux<br>- Création et Gestion de contenus<br>- Relation Clients<br><br>Marketing Digital & Analyses de Données :<br>- Marketing & Référencement- Gestion de Données<br><br>Méthodes & Projets :<br>- Environnement Economique & Juridique<br>- Anglais & Communication"},
         { id: "iesb", image: require('../assets/ies-bendinat-logo.png'), ecole: 'IES Bendinat', diplome: 'Bachibac ES, Économie', annee: '2011-2017', description: "Bachibac (Baccalauréat espagnol reconnu par le Ministère de l’Education Nationale en France) à Majorque (Espagne). <br><br>Le bachibac permet la délivrance simultanée du baccalauréat français et du bachillerato espagnol. Ce diplôme est préparé dans les lycées à section binationale français / espagnol \"bachibac\"."},
       ]
@@ -245,8 +245,6 @@ export default {
   .list-form{
     height: 520px;
     overflow: auto;
-    overflow-y: auto;
-    scrollbar-gutter: stable;
     scrollbar-color: rgba(4, 56, 159, 0.66) $font-wbg-color;
     scrollbar-width: thin;
     padding-right: 14px;
