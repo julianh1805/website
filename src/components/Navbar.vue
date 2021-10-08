@@ -15,8 +15,7 @@
         <transition name="slide">
           <span v-if="open && windowWidth < 768 || windowWidth > 768" class="lg-menu">
             <router-link class="navbar-item" to="/">Accueil</router-link>
-            <router-link class="navbar-item" to="/formation">Formation</router-link>
-            <router-link class="navbar-item" to="/experiences">Experiences</router-link>
+            <router-link class="navbar-item" to="/formation-et-experiences">Formation et expériences</router-link>
             <router-link class="navbar-item" to="/qualites">Qualites</router-link>
             <router-link class="navbar-item" to="/contact">Contact</router-link>
          </span>
@@ -59,7 +58,6 @@ export default {
     width: 100%;
 
     .resp-flex{
-      width: 100%;
       display: flex;
       justify-content: space-between;
 

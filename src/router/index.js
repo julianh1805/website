@@ -1,9 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Formation from '../views/Formation.vue'
+import FormationExperiences from '../views/FormationExperiences.vue'
 import Contact from '../views/Contact.vue'
 import Qualites from '../views/Qualites.vue'
-import Experiences from '../views/Experiences.vue'
 
 const routes = [
   {
@@ -15,37 +14,19 @@ const routes = [
     }
   },
   {
-    path: '/formation',
-    name: 'Formation',
-    component: Formation,
+    path: '/formation-et-experiences',
+    name: 'FormationExperiences',
+    component: FormationExperiences,
     meta: {
-      title: 'Formation | Julian Husson'
+      title: 'Formation et experiences | Julian Husson'
     }
   },
-  ,
-  {
-    path: '/experiences',
-    name: 'Experiences',
-    component: Experiences,
-    meta: {
-      title: 'Experiences | Julian Husson'
-    }
-  },
-  ,
   {
     path: '/qualites',
     name: 'Qualites',
     component: Qualites,
     meta: {
       title: 'Qualites | Julian Husson'
-    }
-  },
-  {
-    path: '/formation',
-    name: 'Formation',
-    component: Formation,
-    meta: {
-      title: 'Formation | Julian Husson'
     }
   },
   {

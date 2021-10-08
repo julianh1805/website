@@ -43,16 +43,8 @@
             </div>
           </div>
         </div>
-        <div v-if="windowWidth >= 968" class="cta">
-          <button class="draw-main trans-main to-formation" @click="goToFormation">Visiter mon palmarès</button>
-          <button class="draw-main trans-main to-contact" @click="goToContact">Me contacter</button>
-        </div>
       </div>
     </div>
-      <div v-if="windowWidth < 968" class="cta center">
-        <button class="draw-main trans-main to-formation" @click="goToFormation">Visiter mon palmarès</button>
-        <button class="draw-main trans-main to-contact" @click="goToContact">Me contacter</button>
-      </div>
     </div>
   </div>
 </template>
@@ -64,7 +56,6 @@ export default {
     return {
       show: false,
       id: null,
-      windowWidth: window.innerWidth,
       certifications : [
         { id: "epsi", image: require('../assets/toeic-logo.jpg'), titre: 'TOEIC (825 points)', delivre: 'Délivré par le TOEIC® Program en juillet 2021'},
         { id: "wis", image: require('../assets/wis-logo.jpg'), titre: 'Chef de projet digital', delivre: 'Délivré par WIS Nantes Program en octobre 2020'},
@@ -78,14 +69,6 @@ export default {
         { id: "wis", image: require('../assets/wis-logo.jpg'), ecole: 'WIS', diplome: 'Gestion du Web / multimédia et webmaster', annee: '2017-2020', description: "Conception & Intégration d'Applications web & mobiles :<br>- Développement Front-end Web<br>- Serveur Web & Pilotage page web<br><br>Communication Digitale & Stratégie Relation Clients :<br>- Communication digitale & Réseaux sociaux<br>- Création et Gestion de contenus<br>- Relation Clients<br><br>Marketing Digital & Analyses de Données :<br>- Marketing & Référencement- Gestion de Données<br><br>Méthodes & Projets :<br>- Environnement Economique & Juridique<br>- Anglais & Communication"},
         { id: "iesb", image: require('../assets/ies-bendinat-logo.png'), ecole: 'IES Bendinat', diplome: 'Bachibac ES, Économie', annee: '2011-2017', description: "Bachibac (Baccalauréat espagnol reconnu par le Ministère de l’Education Nationale en France) à Majorque (Espagne). <br><br>Le bachibac permet la délivrance simultanée du baccalauréat français et du bachillerato espagnol. Ce diplôme est préparé dans les lycées à section binationale français / espagnol \"bachibac\"."},
       ]
-    }
-  },
-  beforeMount(){
-    this.windowWidth = window.innerWidth;
-  },
-  mounted() {
-    window.onresize = () => {
-      this.windowWidth = window.innerWidth;
     }
   },
   methods: {
@@ -114,14 +97,6 @@ export default {
 
 #formation{
   margin-top: 8em;
-
-  .section-main{
-    text-align: center;
-    margin-bottom: 70px;
-    h2{
-      font-size: 36px;
-    }
-  }
 
   .sm-separator{
   margin-bottom: 14px;

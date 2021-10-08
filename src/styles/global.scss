@@ -43,6 +43,14 @@ p{
   }
 }
 
+.section-main{
+  text-align: center;
+  margin-bottom: 70px;
+  h2{
+    font-size: 36px;
+  }
+}
+
 .sm-separator{
   height: 2px;
   background: $font-underlined-color;
@@ -86,3 +94,8 @@ p{
   --animatedUnderlineHeight: 90%;
 }
 
+@media (min-width: 276px) and (max-width: 700px){
+  .cta{
+    flex-direction: column!important;
+  }
+}

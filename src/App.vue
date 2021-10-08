@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     verifyPassword(input){
-      if(input.target.value === '1234AZERqsdf'){
+      if(input.target.value === 'vox'){
         this.access = true;
         localStorage.setItem("access", "yes")
       }
@@ -58,7 +58,7 @@ header{
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .access{
