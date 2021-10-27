@@ -4,7 +4,7 @@
       <section class="section-diamonds">
         <div class="diamonds">
           <div class="box" v-for="lang in languages">
-            <div class="box-face">
+            <div class="box-face" v-bind:class="{ 'dark-highlight' : lang.highlight}">
               <div class="box-text">
                 <i v-if="lang.typeLogo === 'i'" v-bind:class="lang.logo"></i>
                 <img v-if="lang.typeLogo === 'img'" :src="lang.logo" alt="">
@@ -35,22 +35,30 @@ export default {
   data(){
     return {
       languages: [
-        { title: 'Angular', typeLogo: 'i', logo: 'fab fa-angular', oneStar: 4, halfStar: 1, emptyStar: 0},
-        { title: 'TypeScript', typeLogo: 'img', logo: require('../assets/typescript-logo.png'), oneStar: 3, halfStar: 1, emptyStar: 1},
-        { title: 'Vue.js', typeLogo: 'i', logo: 'fab fa-vuejs', oneStar: 3, halfStar: 0, emptyStar: 2},
-        { title: 'Sass/Scss', typeLogo: 'i', logo: 'fab fa-sass', oneStar: 3, halfStar: 1, emptyStar: 1},
-        { title: 'Bootstrap', typeLogo: 'i', logo: 'fab fa-bootstrap', oneStar: 3, halfStar: 1, emptyStar: 1},
-        { title: 'JavaScript', typeLogo: 'i', logo: 'fab fa-js', oneStar: 3, halfStar: 1, emptyStar: 1},
-        { title: 'CSS', typeLogo: 'i', logo: 'fab fa-css3-alt', oneStar: 4, halfStar: 1, emptyStar: 0},
-        { title: 'JQuery', typeLogo: 'img', logo: require('../assets/jquery-logo.gif'), oneStar: 3, halfStar: 1, emptyStar: 1}
+        { title: 'Angular', highlight: true, typeLogo: 'i', logo: 'fab fa-angular', oneStar: 4, halfStar: 1, emptyStar: 0},
+        { title: 'TypeScript', highlight: false, typeLogo: 'img', logo: require('../assets/typescript-logo.png'), oneStar: 3, halfStar: 1, emptyStar: 1},
+        { title: 'Vue.js', highlight: false, typeLogo: 'i', logo: 'fab fa-vuejs', oneStar: 3, halfStar: 0, emptyStar: 2},
+        { title: 'Sass/Scss', highlight: false, typeLogo: 'i', logo: 'fab fa-sass', oneStar: 3, halfStar: 1, emptyStar: 1},
+        { title: 'Bootstrap', highlight: false, typeLogo: 'i', logo: 'fab fa-bootstrap', oneStar: 3, halfStar: 1, emptyStar: 1},
+        { title: 'JavaScript', highlight: false, typeLogo: 'i', logo: 'fab fa-js', oneStar: 3, halfStar: 1, emptyStar: 1},
+        { title: 'CSS', highlight: false, typeLogo: 'i', logo: 'fab fa-css3-alt', oneStar: 4, halfStar: 1, emptyStar: 0},
+        { title: 'JQuery', highlight: false, typeLogo: 'img', logo: require('../assets/jquery-logo.gif'), oneStar: 3, halfStar: 1, emptyStar: 1}
       ]
     }
   },
+  methods: {
+    resizeBoxes(){
+      var box_width = $('.box').width();
+      $('.box').css({'height':box_width+'px'});
+      $('.box-face').css({'width':box_width+'px'});
+      $('.box-face').css({'height':box_width+'px'});
+    }
+  },
   mounted() {
-    var box_width = $('.box').width();
-    $('.box').css({'height':box_width+'px'});
-    $('.box-face').css({'width':box_width+'px'});
-    $('.box-face').css({'height':box_width+'px'});
+    this.resizeBoxes();
+    window.onresize = () => {
+      this.resizeBoxes();
+    }
   }
 }
 </script>
@@ -61,7 +69,7 @@ export default {
   .section-diamonds{
     .diamonds{
       display: grid;
-      grid-gap: 5px;
+      grid-gap: 6px;
       .box {
         position: relative;
         width: 100%;
@@ -78,26 +86,21 @@ export default {
             visibility: visible;
             opacity: 1;
           }
-          &.link > .box-face {
-            background-color: transparent!important;
-            & > .box-text {
-              color: #323232;
-            }
-          }
         }
+      }
 
-        &.link {
-          & > .box-face {
-            background-color: #323232;
-            border: 1px solid #323232;
-            box-sizing: border-box;
-            transition: background-color .5s;
-          }
-          & .box-text {
-            color: #efefef;
-            transition: color .5s;
-          }
-        }
+      .dark-highlight > .box-text{
+        background-color: #323232;
+      }
+
+      .dark-highlight{
+        border: 1px solid #323232!important;
+      }
+
+      .box-face{
+        border: 1px solid #dedede;
+        position: relative;
+        left: 0px;
       }
 
       .box-face .box-text {
@@ -112,8 +115,8 @@ export default {
         position: absolute;
         top:0;
         z-index:1;
-        width: 100%;
-        height: 100%;
+        width: 101%;
+        height: 101%;
         background-color: #dedede;
         transform-style: preserver-3d;
         -webkit-transform-style: preserver-3d;
@@ -133,7 +136,6 @@ export default {
 
       .box-back .box-text {
         text-align: center;
-        font-size: 11px;
         color: #636363;
         transition: opacity 0s linear .3s;
         transform: rotateX(180deg);
@@ -167,7 +169,6 @@ export default {
         visibility: hidden;
         opacity: 0;
         width: 80%;
-        font-size: 12px;
         color: #000;
         text-align: center;
         border-top: 1px solid rgba(0,0,0,.8);
@@ -179,7 +180,6 @@ export default {
       .tooltip:after {
         position: absolute;
         top: -5px;
-        left: 45%;
         content:' ';
         width: 0;
         height: 0;
@@ -194,6 +194,17 @@ export default {
   .diamonds {
     grid-template-columns: repeat(3, 1fr);
   }
+  .tooltip{
+    font-size: 12px;
+  }
+  .box-back .box-text {
+    font-size: 11px;
+  }
+  .tooltip:after {
+    position: absolute;
+    top: -5px;
+    left: 45%;
+  }
 }
 
 @media (min-width: 476px) {
@@ -202,7 +213,17 @@ export default {
   }
 }
 
-@media (min-width: 992px) {
-
+@media (min-width: 774px) {
+  .tooltip{
+    font-size: 14px;
+  }
+  .box-back .box-text {
+    font-size: 13px;
+  }
+  .tooltip:after {
+    position: absolute;
+    top: -5px;
+    left: 47%;
+  }
 }
 </style>
