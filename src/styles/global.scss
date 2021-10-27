@@ -97,5 +97,8 @@ p{
 @media (min-width: 276px) and (max-width: 700px){
   .cta{
     flex-direction: column!important;
+    button{
+      margin-right: 0px;
+    }
   }
 }
