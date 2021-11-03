@@ -1,6 +1,11 @@
 <template>
   <div id="competences">
     <div class="container">
+      <h2>
+        <a class="r-link animated-underline animated-underline">
+          Un passion qui va du front... au back
+        </a>
+      </h2>
       <section class="section-diamonds">
         <div class="diamonds">
           <div class="box" v-for="lang in languages">
@@ -34,27 +39,28 @@ export default {
   name: 'CompetencesMobile',
   data(){
     return {
-      languages: [
-        { title: 'Angular', highlight: true, typeLogo: 'i', logo: 'fab fa-angular', oneStar: 4, halfStar: 1, emptyStar: 0},
-        { title: 'TypeScript', highlight: false, typeLogo: 'img', logo: require('../assets/typescript-logo.png'), oneStar: 3, halfStar: 1, emptyStar: 1},
-        { title: 'Vue.js', highlight: false, typeLogo: 'i', logo: 'fab fa-vuejs', oneStar: 3, halfStar: 0, emptyStar: 2},
-        { title: 'Sass/Scss', highlight: false, typeLogo: 'i', logo: 'fab fa-sass', oneStar: 3, halfStar: 1, emptyStar: 1},
-        { title: 'Bootstrap', highlight: false, typeLogo: 'i', logo: 'fab fa-bootstrap', oneStar: 3, halfStar: 1, emptyStar: 1},
-        { title: 'JavaScript', highlight: false, typeLogo: 'i', logo: 'fab fa-js', oneStar: 3, halfStar: 1, emptyStar: 1},
-        { title: 'CSS', highlight: false, typeLogo: 'i', logo: 'fab fa-css3-alt', oneStar: 4, halfStar: 1, emptyStar: 0},
-        { title: 'JQuery', highlight: false, typeLogo: 'img', logo: require('../assets/jquery-logo.gif'), oneStar: 3, halfStar: 1, emptyStar: 1}
-      ]
+      languages: [],
     }
   },
   methods: {
     resizeBoxes(){
-      var box_width = $('.box').width();
-      $('.box').css({'height':box_width+'px'});
-      $('.box-face').css({'width':box_width+'px'});
-      $('.box-face').css({'height':box_width+'px'});
+      var box_sel = $('.box');
+      var box_face_sel = $('.box-face');
+      var box_width = box_sel.width();
+      box_sel.css({'height':box_width+'px'});
+      box_face_sel.css({'width':box_width+'px'});
+      box_face_sel.css({'height':box_width+'px'});
     }
   },
+  beforeMount() {
+    this.languages = this.$languages;
+  },
   mounted() {
+      $('.box').on('touchstart', function(e) {
+        $('.box').removeClass('hover');
+        e.preventDefault();
+        $(this).toggleClass('hover');
+      });
     this.resizeBoxes();
     window.onresize = () => {
       this.resizeBoxes();
@@ -64,8 +70,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.hover {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
 #competences{
   margin-top: 100px;
+  h2{
+    font-size: 36px;
+  }
   .section-diamonds{
     .diamonds{
       display: grid;
@@ -74,7 +87,7 @@ export default {
         position: relative;
         width: 100%;
         cursor: pointer;
-        &:hover{
+        &.hover, &:hover{
           &:not(.link) > .box-face, > .box-back {
             transform: rotateX(180deg);
             background-color: transparent!important;
@@ -123,10 +136,8 @@ export default {
         -moz-transform-style: preserver-3d;
         transition: transform 1s, background-color 0s .3s;
       }
-
       .box-face .box-text {
         text-align: center;
-        font-size: 9vw;
         color: #bababa;
         transition: opacity 0s linear .3s;
         display: flex;
@@ -158,7 +169,6 @@ export default {
       }
 
       .box-text img {
-        max-width: 9vw;
         -webkit-filter: grayscale(100%) saturate(0);
         filter: grayscale(100%) saturate(0);
         opacity: .5;
@@ -205,11 +215,29 @@ export default {
     top: -5px;
     left: 45%;
   }
+  .box-text img{
+    max-width: 9vw;
+  }
+  .box-face .box-text{
+    font-size: 9vw;
+  }
 }
 
 @media (min-width: 476px) {
   .diamonds {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 624px) {
+  .diamonds {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .box-text img{
+    max-width: 6vw;
+  }
+  .box-face .box-text{
+    font-size: 6vw;
   }
 }
 
