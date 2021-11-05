@@ -1,6 +1,5 @@
 <template>
-  <CompetencesMobile v-if="windowWidth < 992"></CompetencesMobile>
-  <Competences v-else></Competences>
+  <CompetencesMobile></CompetencesMobile>
 </template>
 
 <script>
