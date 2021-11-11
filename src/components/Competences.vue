@@ -69,8 +69,19 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      animation-duration: 2s;
+      animation-name: make-content-appear;
     }
   }
+}
+
+@keyframes make-content-appear {
+  0% { opacity: 0; position: relative; top: -100px; }
+  40% { opacity: 0; position: relative; top: -60px;}
+  80% { opacity: 0.8;}
+  99% { position: relative; top: 0px;}
+  100% { opacity: 1; position: initial; }
+
 }
 
 </style>
