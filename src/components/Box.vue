@@ -6,7 +6,8 @@
       <img v-if="language.typeLogo === 'img'" :src="language.logo" alt="">
     </div>
   </div>
-  <div class="box-back">
+    <div class="box-back">
+      <div class="box-back-text">
     <div class="tooltip">
       <span>{{ language.title }}</span>
     </div>
@@ -15,6 +16,7 @@
       <i class="fas fa-star-half-alt" v-for="star in language.halfStar"></i>
       <i class="far fa-star" v-for="star in language.emptyStar"></i>
     </div>
+      </div>
   </div>
   </div>
 </template>
@@ -70,16 +72,12 @@ export default {
 }
 }
 
-.dark-highlight > .box-text{
-  background-color: #323232;
-}
-
-.dark-highlight{
+.dark-highlight {
+  background-color: #323232!important;
   border: 1px solid #323232!important;
 }
 
 .box-face{
-  border: 1px solid #dedede;
   position: relative;
   left: 0;
 }
@@ -100,6 +98,7 @@ svg {
   height: 100%;
   background-color: #dedede;
   transition: transform 1s, background-color 0s .3s;
+
 }
 .box-face .box-text {
   text-align: center;
@@ -201,7 +200,7 @@ svg {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1275px){
   .box-text img{
     max-width: 5vw;
   }
@@ -220,6 +219,26 @@ svg {
     transform: rotate(45deg);
     margin: 25px;
     cursor: pointer;
+  }
+  .box-text {
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    transform: rotate(225deg);
+  }
+  .box-back-text{
+    transform: rotate(45deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: -5px;
+  }
+  .box-face, .box-back{
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
   .box-text img{
     width: 28px;
