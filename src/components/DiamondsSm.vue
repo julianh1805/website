@@ -47,4 +47,10 @@ export default {
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
+@media (min-width: 1024px) {
+  .diamonds {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 </style>

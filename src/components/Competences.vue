@@ -2,7 +2,6 @@
   <div id="competences">
     <div class="container">
       <div id="content">
-      <div id="title">
         <h2>
           <a class="r-link animated-underline animated-underline">
             Un passion qui va du front... au back
@@ -14,19 +13,35 @@
         </p>
       </div>
       <section class="section-diamonds">
-        <DiamondsSm></DiamondsSm>
+        <DiamondsSm v-if="windowWidth < 1276"></DiamondsSm>
+        <DiamondsLg v-else></DiamondsLg>
       </section>
-      </div>
     </div>
   </div>
 </template>
 <script>
 import DiamondsSm from "./DiamondsSm";
+import DiamondsLg from "./DiamondsLg";
 
 export default {
   name: 'Competences',
   components: {
+    DiamondsLg,
     DiamondsSm,
+  },
+  data() {
+    return {
+      open : false,
+      windowWidth: window.innerWidth
+    }
+  },
+  beforeMount(){
+    this.windowWidth = window.innerWidth;
+  },
+  mounted() {
+    window.onresize = () => {
+      this.windowWidth = window.innerWidth;
+    }
   },
 }
 </script>
@@ -41,6 +56,20 @@ export default {
   h2{
     text-align: center;
     font-size: 36px;
+  }
+}
+
+@media (min-width: 1276px) {
+  .container {
+    display: flex;
+    .section-diamonds{
+      width: 100%;
+    }
+    #content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
 

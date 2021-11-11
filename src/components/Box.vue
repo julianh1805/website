@@ -54,7 +54,6 @@ export default {
 <style lang="scss" scoped>
 .box {
   position: relative;
-  width: 100%;
   cursor: pointer;
 &.hover, &:hover{
 &:not(.link) > .box-face, > .box-back {
@@ -97,8 +96,8 @@ svg {
   position: absolute;
   top:0;
   z-index:1;
-  width: 101%;
-  height: 101%;
+  width: 100%;
+  height: 100%;
   background-color: #dedede;
   transition: transform 1s, background-color 0s .3s;
 }
@@ -117,13 +116,6 @@ svg {
   transition: opacity 0s linear .3s;
   transform: rotateX(180deg);
   padding-bottom: 5px;
-}
-
-.box-back .box-text i {
-  -webkit-transform: rotateX(170deg);
-  -ms-transform: rotateX(170deg);
-  -moz-transform: rotateX(170deg);
-  transform: rotateX(170deg);
 }
 
 .box-back {
@@ -206,6 +198,34 @@ svg {
     position: absolute;
     top: -5px;
     left: 47%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-text img{
+    max-width: 5vw;
+  }
+  .box-face .box-text{
+    font-size: 5vw;
+  }
+}
+
+@media (min-width: 1276px) {
+  .box {
+    width: 100px;
+    height: 100px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 25px;
+    cursor: pointer;
+  }
+  .box-text img{
+    width: 28px;
+  }
+  .box-face .box-text{
+    font-size: 28px;
   }
 }
 </style>
