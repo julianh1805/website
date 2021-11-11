@@ -1,8 +1,6 @@
 <template>
   <div class="diamonds">
-  <div class="box" v-for="lang in languages">
-    <Box :language="lang"></Box>
-  </div>
+    <Box v-for="(lang, index) in languages" :language="lang"></Box>
   </div>
 </template>
 
@@ -46,6 +44,18 @@ export default {
   .diamonds {
     grid-template-columns: repeat(5, 1fr);
   }
+  @for $i from 1 through 16 {
+    @keyframes appear-from-top-#{$i} {
+      0% { position: relative; top: -100px*$i; }
+      99% { position: relative; top: 0px;}
+      100% { position: initial; }
+    }
+
+    .box:nth-child(#{$i}) {
+      animation-duration: 1200ms;
+      animation-name: appear-from-top-#{$i};
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -53,4 +63,5 @@ export default {
     grid-template-columns: repeat(6, 1fr);
   }
 }
+
 </style>

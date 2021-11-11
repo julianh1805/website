@@ -81,7 +81,6 @@ export default {
   80% { opacity: 0.8;}
   99% { position: relative; top: 0px;}
   100% { opacity: 1; position: initial; }
-
 }
 
 </style>
