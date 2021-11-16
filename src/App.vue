@@ -1,42 +1,89 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-    <h1>{{title}}</h1>
+  <div v-if="access">
+  <header>
+    <Navbar></Navbar>
+  </header>
+  <main>
+    <router-view/>
+  </main>
+  <footer>
+    <Footer></Footer>
+  </footer>
   </div>
-  <router-view/>
+  <div v-if="!access" class="access">
+    <div class="template">
+    <h2>Site en développement</h2>
+    <span>Introduisez le mot de passe :</span>
+    <input @keyup="verifyPassword">
+    </div>
+  </div>
 </template>
 
 <script>
+import Navbar from '@/components/Navbar.vue'
+import Footer from '@/components/Footer.vue'
+
 export default {
   name: 'App',
+  components:{
+    Navbar,
+    Footer
+  },
   data() {
     return {
-      title : 'Website'
+      title : 'Website',
+      access: false,
+    }
+  },
+  beforeMount(){
+    if(localStorage.getItem("access") === "yes"){
+      this.access = true;
+    }
+  },
+  methods: {
+    verifyPassword(input){
+      if(input.target.value === 'vox'){
+        this.access = true;
+        localStorage.setItem("access", "yes")
+      }
     }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style lang="scss">
+header{
+  background: $bg-radient;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
 }
 
-#nav {
-  padding: 30px;
-}
+.access{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  .template{
+    text-align: center;
+    h2{
+      font-size: 32px;
+    }
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+  span{
+    display: block;
+    text-align: center;
+  }
+
+  input{
+    margin-top: 8px;
+    border: 2px solid $main-color;
+    border-radius: 4px;
+  }
 }
 </style>

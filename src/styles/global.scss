@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app{
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+textarea{
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+h2, h2 a{
+  color: $font-main-title-color;
+  margin-bottom: $spacement-between;
+}
+
+p{
+  color: $font-secondary-title-color;
+}
+
+.content{
+  color: $font-secondary-title-color;
+  font-size: 16px;
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section{
+  color: $font-main-title-color;
+  text-align: center;
+  margin-bottom: 40px;
+  .title{
+    font-size: 24px;
+  }
+}
+
+.section-main{
+  text-align: center;
+  margin-bottom: 70px;
+  h2{
+    font-size: 36px;
+  }
+}
+
+.sm-separator{
+  height: 2px;
+  background: $font-underlined-color;
+  width: 40%;
+  margin: 14px auto;
+}
+
+.lg-separator{
+  height: 1.5px;
+  background: #86a1cd;
+  width: 80%;
+  margin: 90px auto;
+}
+
+.animated-underline{
+  --animatedUnderlineHeight: 0.3rem;
+  --animatedUnderlineBgColor: #f6f666;
+
+  --uiAnimatedUnderlineWidth: var(--animatedUnderlineWidth, 100%);
+  --uiAnimatedUnderlineHeight: var(--animatedUnderlineHeight, 100px);
+  --uiAnimatedUnderlineBgColor: var(--animatedUnderlineBgColor, currentColor);
+  --uiAnimatedUnderlinePositionX: var(--animatedUnderlinePositionX, left);
+  --uiAnimatedUnderlinePositionY: var(--animatedUnderlinePositionY, bottom);
+  --animatedUnderlineWidth: 100%;
+
+  --rLinkDisplay: inline;
+
+  background-image: linear-gradient(0, var(--uiAnimatedUnderlineBgColor) 0, var(--uiAnimatedUnderlineBgColor));
+  background-size: var(--uiAnimatedUnderlineWidth) var(--uiAnimatedUnderlineHeight);
+  background-position: var(--uiAnimatedUnderlinePositionX) var(--uiAnimatedUnderlinePositionY);
+  background-repeat: no-repeat;
+
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+
+  will-change: background-size;
+  transition: background-size .25s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.animated-underline:hover{
+  --animatedUnderlineHeight: 90%;
+}
+
+@media (min-width: 276px) and (max-width: 700px){
+  .cta{
+    flex-direction: column!important;
+    button{
+      margin-right: 0px;
+    }
+  }
+}

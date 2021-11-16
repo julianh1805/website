@@ -1,0 +1,101 @@
+button {
+  border: 0;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  margin: 1em 1em 0 0;
+  padding: 1em 2em;
+
+  font-size: inherit;
+  font-weight: 500;
+
+  position: relative;
+  vertical-align: middle;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
+
+.draw-main {
+  transition: color 0.25s;
+
+  &::before,
+  &::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover {
+    color: #04389f;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover::before {
+    border-top-color: #04389f;
+    border-right-color: #04389f;
+    transition:
+            width 0.25s ease-out,
+            height 0.25s ease-out 0.25s;
+  }
+
+  &:hover::after {
+    border-bottom-color: red;
+    border-left-color: red;
+    transition:
+            border-color 0s ease-out 0.5s,
+            width 0.25s ease-out 0.5s,
+            height 0.25s ease-out 0.75s;
+  }
+}
+
+.trans-main {
+
+  &:hover {
+    color: #f6f666;
+  }
+
+  &::after {
+    top: 0;
+    left: 0;
+  }
+
+  &:hover::before {
+    border-top-color: #f6f666;
+    border-right-color: #f6f666;
+  }
+
+  &:hover::after {
+    border-bottom-color: #f6f666;
+    border-left-color: #f6f666;
+    transition:
+            height 0.25s ease-out,
+            width 0.25s ease-out 0.25s;
+  }
+}
