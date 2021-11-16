@@ -18,12 +18,12 @@ app.config.globalProperties.$languages = [
     { title: 'Bootstrap', highlight: false, typeLogo: 'i', logo: 'fab fa-bootstrap', oneStar: 3, halfStar: 1, emptyStar: 1},
     { title: 'Sass/Scss', highlight: false, typeLogo: 'i', logo: 'fab fa-sass', oneStar: 3, halfStar: 1, emptyStar: 1},
     { title: 'JavaScript', highlight: false, typeLogo: 'i', logo: 'fab fa-js', oneStar: 3, halfStar: 0, emptyStar: 2},
-    { title: 'JQuery', highlight: false, typeLogo: 'img', logo: require('../src/assets/jquery-logo.gif'), oneStar: 3, halfStar: 1, emptyStar: 1},
+    { title: 'Python', highlight: false, typeLogo: 'img', logo: require('../src/assets/python-logo.png'), oneStar: 2, halfStar: 1, emptyStar: 2},
     { title: 'Java', highlight: true, typeLogo: 'i', logo: 'fab fa-java', oneStar: 3, halfStar: 1, emptyStar: 1},
     { title: 'NodeJS', highlight: false, typeLogo: 'i', logo: 'fab fa-node-js', oneStar: 3, halfStar: 0, emptyStar: 2},
     { title: 'Docker', highlight: false, typeLogo: 'i', logo: 'fab fa-docker', oneStar: 3, halfStar: 0, emptyStar: 2},
     { title: 'PostgreSQL', highlight: false, typeLogo: 'img', logo: require('../src/assets/postgresql-logo.png'), oneStar: 3, halfStar: 0, emptyStar: 2},
     { title: 'MongoDB (NoSQL)', highlight: false, typeLogo: 'img', logo: require('../src/assets/mongo-db-logo.png'), oneStar: 3, halfStar: 1, emptyStar: 1},
-    { title: 'Firebase', highlight: false, typeLogo: 'img', logo: require('../src/assets/firebase-logo.png'), oneStar: 2, halfStar: 1, emptyStar: 2},
+    { title: 'CI/CD', highlight: false, typeLogo: 'img', logo: require('../src/assets/devops-logo.png'), oneStar: 3, halfStar: 0, emptyStar: 2},
 ];
 
