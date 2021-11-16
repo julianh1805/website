@@ -20,16 +20,16 @@
         <Box :language="languages[9]"></Box>
       </div>
       <div class="v-boxes five">
-        <Box :language="languages[3]"></Box>
-        <Box :language="languages[4]"></Box>
-        <Box :language="languages[5]"></Box>
+        <Box :language="languages[15]"></Box>
+        <Box :language="languages[11]"></Box>
+        <Box :language="languages[12]"></Box>
       </div>
       <div class="v-boxes six-pack">
-        <Box :language="languages[1]"></Box>
-        <Box :language="languages[2]"></Box>
+        <Box :language="languages[13]"></Box>
+        <Box :language="languages[14]"></Box>
       </div>
       <div class="v-boxes seven-up">
-        <Box :language="languages[0]"></Box>
+        <Box :language="languages[10]"></Box>
       </div>
     </div>
   </section>
