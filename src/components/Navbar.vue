@@ -12,14 +12,12 @@
             </label>
           </div>
         </div>
-        <transition name="slide">
-          <span v-if="open && windowWidth < 768 || windowWidth > 768" class="lg-menu">
-            <router-link class="navbar-item" to="/">Accueil</router-link>
-            <router-link class="navbar-item" to="/formation-et-experiences">Formation et expériences</router-link>
-            <router-link class="navbar-item" to="/qualites">Qualites</router-link>
-            <router-link class="navbar-item" to="/contact">Contact</router-link>
-         </span>
-        </transition>
+          <div v-bind:class="{'collapsed': !open && windowWidth < 768}" class="lg-menu">
+            <router-link class="navbar-item" @click="open = false" to="/">Accueil</router-link>
+            <router-link class="navbar-item" @click="open = false" to="/formation-et-experiences">Formation et expériences</router-link>
+            <router-link class="navbar-item" @click="open = false" to="/qualites">Qualites</router-link>
+            <router-link class="navbar-item" @click="open = false" to="/contact">Contact</router-link>
+         </div>
       </nav>
     </div>
 </template>
@@ -39,6 +37,9 @@ export default {
   mounted() {
     window.onresize = () => {
       this.windowWidth = window.innerWidth;
+      if (this.windowWidth < 768) {
+        this.open = false;
+      }
     }
   },
   methods:{
@@ -122,7 +123,6 @@ export default {
     }
 
   .lg-menu{
-
     .router-link-active{
       &::before {
         width: 12px;
@@ -162,6 +162,16 @@ export default {
 }
 
 @media (min-width: 276px) {
+  .lg-menu{
+    display: block;
+    max-height:650px;
+    transition:all 500ms ease;
+  }
+  .collapsed{
+    max-height:0px;
+    overflow:hidden;
+    transition:all 200ms ease;
+  }
   .navbar-item {
     margin-bottom: 10px;
     &:hover{
@@ -171,7 +181,7 @@ export default {
       }
     }
     &::before{
-      width: 0px;
+      width: 0;
     }
   }
 }
