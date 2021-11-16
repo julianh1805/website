@@ -1,14 +1,14 @@
 <template>
-  <Competences></Competences>
+  <Form></Form>
 </template>
 
 <script>
-import Competences from '@/components/Competences.vue'
+import Form from '@/components/Form.vue'
 
 export default {
   name: 'Contact',
   components:{
-    Competences
+    Form
   }
 }
 </script>
