@@ -23,7 +23,7 @@ app.config.globalProperties.$languages = [
     { title: 'NodeJS', highlight: false, typeLogo: 'i', logo: 'fab fa-node-js', oneStar: 3, halfStar: 0, emptyStar: 2},
     { title: 'Docker', highlight: false, typeLogo: 'i', logo: 'fab fa-docker', oneStar: 3, halfStar: 0, emptyStar: 2},
     { title: 'PostgreSQL', highlight: false, typeLogo: 'img', logo: require('../src/assets/postgresql-logo.png'), oneStar: 3, halfStar: 0, emptyStar: 2},
-    { title: 'MongoDB (NoSQL)', highlight: false, typeLogo: 'img', logo: require('../src/assets/mongo-db-logo.png'), oneStar: 3, halfStar: 1, emptyStar: 1},
+    { title: 'MongoDB', highlight: false, typeLogo: 'img', logo: require('../src/assets/mongo-db-logo.png'), oneStar: 3, halfStar: 1, emptyStar: 1},
     { title: 'CI/CD', highlight: false, typeLogo: 'img', logo: require('../src/assets/devops-logo.png'), oneStar: 3, halfStar: 0, emptyStar: 2},
 ];
 

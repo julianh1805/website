@@ -1,0 +1,22 @@
+form{
+  .form-group{
+    padding-bottom: 18px;
+    label{
+      text-align: left;
+      color: $font-main-p-color;
+      display: block;
+      font-size: 16px;
+      padding-bottom: 3px;
+    }
+    input, textarea{
+      width: 97%;
+      border-radius: $border-radius;
+      border: 1px solid $bg-color;
+      padding: 4px;
+      font-size: 16px;
+    }
+    input{
+      height: 30px;
+    }
+  }
+}
