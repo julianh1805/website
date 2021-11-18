@@ -7,6 +7,17 @@
 <p>Hi, I am Julian Husson, actually junior full-stack developer at <a href="https://biogasview.com">biogasview.com</a> and also software engineer student. 
 On my website you will learn all about me and what I do : degrees, certificates, skills. Enjoy !</p>
 
+### My favorite technologies :
+![HTML5](https://img.shields.io/badge/-HTML5-333333?style=flat&logo=HTML5)
+![CSS](https://img.shields.io/badge/-CSS-333333?style=flat&logo=CSS3&logoColor=1572B6)
+![TypeScript](https://img.shields.io/badge/-TypeScript-333333?style=flat&logo=typescript&logoColor=00599C)
+![Angular](https://img.shields.io/badge/-Angular-333333?style=flat&logo=angular&logoColor=dd1b16)
+![Flutter](https://img.shields.io/badge/-Flutter-333333?style=flat&logo=flutter)
+![Java](https://img.shields.io/badge/-Java-333333?style=flat&logo=Java&logoColor=007396)
+![PSQL](https://img.shields.io/badge/-PostgreSQL-333333?style=flat&logo=postgresql)
+![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=Git)
+
+####📲 Get in touch :
 <p align="left">
  <a href="mailto:husson.j@yahoo.com" alt="Yahoo">
   <img src="https://img.shields.io/badge/-Yahoo-430297?style=flat-square&labelColor=430297&logo=yahoo&logoColor=white&link=husson.j@yahoo.com" /></a>
@@ -16,6 +27,5 @@ On my website you will learn all about me and what I do : degrees, certificates,
 
   <a href="https://codepen.io/Julianh1805" alt="Instagram">
   <img src="https://img.shields.io/badge/-Codepen-grey?style=flat-square&labelColor=grey&logo=codepen&logoColor=white&link=https://codepen.io/Julianh1805"/></a>
-</p>  
-
+</p>
 
