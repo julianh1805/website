@@ -2,7 +2,7 @@
   <div id="footer">
     <div id="full-bg">
       <div class="center">
-        <h4 class="hook yellow-hook">C'est le moment de faire connaisance. <br>Faites le premier pas</h4>
+        <h4 class="yellow-hook">C'est le moment de faire connaisance. <br>Faites le premier pas</h4>
         <p class="pub">(malgré les apparences, cet espace n'est pas sponsorisé par Ikea)</p>
         <button class="draw">Contacter Julian Husson</button>
       </div>
@@ -74,21 +74,6 @@ export default {
     margin-bottom: 15px;
     text-align: center;
   }
-}
-@-webkit-keyframes intro-gradient {
-  0%{background-position:0% 4%}
-  50%{background-position:100% 97%}
-  100%{background-position:0% 4%}
-}
-@-moz-keyframes intro-gradient {
-  0%{background-position:0% 4%}
-  50%{background-position:100% 97%}
-  100%{background-position:0% 4%}
-}
-@keyframes intro-gradient {
-  0%{background-position:0% 4%}
-  50%{background-position:100% 97%}
-  100%{background-position:0% 4%}
 }
 
 button{

@@ -122,7 +122,7 @@ export default {
   }
 }
 
-@media (min-width: 601px) {
+  @media (min-width: 601px) {
   #presentation .grid {
     grid-template-columns: minmax(min-content, 2fr) minmax(min-content, 4fr);
   }
