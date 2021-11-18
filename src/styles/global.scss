@@ -75,6 +75,29 @@ p{
   margin: 90px auto;
 }
 
+.hook{
+  font-size: 40px;
+  -webkit-animation: intro-gradient 7s infinite ease both;
+  -moz-animation: intro-gradient 7s infinite ease both;
+  animation: intro-gradient 7s infinite ease both;
+  background-size: 200% 200%;
+  -webkit-text-fill-color: transparent;
+}
+
+.yellow-hook{
+  background: linear-gradient(91.36deg, #B1A600FF 0%, #B1A600FF 13.02%, #f6f666 25.52%, #EEE781FF 37.5%, white 49.48%, #EEE781FF 63.02%, #f6f666 72.92%, #B1A600FF 84.38%, #B1A600FF 97.92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+}
+
+.blue-hook{
+  background: linear-gradient(91.36deg, #00225e 0%, #003898 13.02%, #003da4 25.52%, rgba(1, 110, 224, 0.42) 37.5%, white 49.48%, #EEE781FF 63.02%, #f6f666 72.92%, #B1A600FF 84.38%, #B1A600FF 97.92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+}
+
 .animated-underline{
   --animatedUnderlineHeight: 0.3rem;
   --animatedUnderlineBgColor: #f6f666;
