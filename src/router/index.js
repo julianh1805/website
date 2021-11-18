@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import FormationExperiences from '../views/FormationExperiences.vue'
 import Contact from '../views/Contact.vue'
 import Qualites from '../views/Qualites.vue'
+import Page404 from "../views/Page404";
 
 const routes = [
   {
@@ -37,6 +38,10 @@ const routes = [
       title: 'Contact | Julian Husson'
     }
   },
+  {
+    path: "/:pathMatch(.*)*",
+    component: Page404,
+  }
 ]
 
 const router = createRouter({

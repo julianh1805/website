@@ -75,6 +75,31 @@ p{
   margin: 90px auto;
 }
 
+.yellow-hook{
+  font-size: 40px;
+  background: linear-gradient(91.36deg, #B1A600FF 0%, #B1A600FF 13.02%, #f6f666 25.52%, #EEE781FF 37.5%, white 49.48%, #EEE781FF 63.02%, #f6f666 72.92%, #B1A600FF 84.38%, #86b4ff 97.92%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-animation: intro-gradient 7s infinite ease both;
+  -moz-animation: intro-gradient 7s infinite ease both;
+  animation: intro-gradient 7s infinite ease both;
+}
+
+.blue-hook{
+  background: linear-gradient(91.36deg, #00143d 0%, #00276c 13.02%, #003188 25.52%, rgb(0, 49, 145) 37.5%, #003abb 49.48%, #1361de 63.02%, #3e89ff 72.92%, #4389ff 84.38%, #86b4ff 97.92%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-animation: intro-gradient 7s infinite ease both;
+  -moz-animation: intro-gradient 7s infinite ease both;
+  animation: intro-gradient 7s infinite ease both;
+}
+
 .animated-underline{
   --animatedUnderlineHeight: 0.3rem;
   --animatedUnderlineBgColor: #f6f666;
@@ -104,11 +129,48 @@ p{
   --animatedUnderlineHeight: 90%;
 }
 
-@media (min-width: 276px) and (max-width: 700px){
+@keyframes intro-gradient {
+  0% {
+    background-position:0 4%;
+  }
+  50% {
+    background-position: 100% 97%;
+  }
+  100% {
+    background-position:0 4%;
+  }
+}
+
+@-webkit-keyframes intro-gradient {
+  0% {
+    background-position:0 4%;
+  }
+  50% {
+    background-position: 100% 97%;
+  }
+  100% {
+    background-position:0 4%;
+  }
+}
+
+@-moz-keyframes intro-gradient {
+  0% {
+    background-position:0 4%;
+  }
+  50% {
+    background-position: 100% 97%;
+  }
+  100% {
+    background-position:0 4%;
+  }
+}
+
+@media (min-width: 276px) and (max-width: 859px){
   .cta{
+    display: flex!important;
     flex-direction: column!important;
     button{
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
 }

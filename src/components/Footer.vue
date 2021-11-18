@@ -2,7 +2,7 @@
   <div id="footer">
     <div id="full-bg">
       <div class="center">
-        <h4 class="hook">C'est le moment de faire connaisance. <br>Faites le premier pas</h4>
+        <h4 class="yellow-hook">C'est le moment de faire connaisance. <br>Faites le premier pas</h4>
         <p class="pub">(malgré les apparences, cet espace n'est pas sponsorisé par Ikea)</p>
         <button class="draw">Contacter Julian Husson</button>
       </div>
@@ -42,18 +42,6 @@ export default {
       display: block;
       padding: 150px 0;
       text-align: center;
-      .hook{
-        font-size: 40px;
-        background: linear-gradient(91.36deg, #B1A600FF 0%, #B1A600FF 13.02%, #f6f666 25.52%, #EEE781FF 37.5%, white 49.48%, #EEE781FF 63.02%, #f6f666 72.92%, #B1A600FF 84.38%, #B1A600FF 97.92%);
-        background-size: 200% 200%;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        -moz-background-clip: text;
-        -webkit-animation: intro-gradient 7s infinite ease both;
-        -moz-animation: intro-gradient 7s infinite ease both;
-        animation: intro-gradient 7s infinite ease both;
-      }
       p{
         color: white;
         margin: 20px 0;
@@ -86,21 +74,6 @@ export default {
     margin-bottom: 15px;
     text-align: center;
   }
-}
-@-webkit-keyframes intro-gradient {
-  0%{background-position:0% 4%}
-  50%{background-position:100% 97%}
-  100%{background-position:0% 4%}
-}
-@-moz-keyframes intro-gradient {
-  0%{background-position:0% 4%}
-  50%{background-position:100% 97%}
-  100%{background-position:0% 4%}
-}
-@keyframes intro-gradient {
-  0%{background-position:0% 4%}
-  50%{background-position:100% 97%}
-  100%{background-position:0% 4%}
 }
 
 button{

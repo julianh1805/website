@@ -160,7 +160,8 @@ export default {
   }
   #cordonnees{
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
+    justify-content: initial;
   }
 }
 </style>
