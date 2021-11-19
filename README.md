@@ -17,7 +17,7 @@ On my website you will learn all about me and what I do : degrees, certificates,
 ![PSQL](https://img.shields.io/badge/-PostgreSQL-333333?style=flat&logo=postgresql)
 ![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=Git)
 
-####📲 Get in touch :
+#### 📲 Get in touch :
 <p align="left">
  <a href="mailto:husson.j@yahoo.com" alt="Yahoo">
   <img src="https://img.shields.io/badge/-Yahoo-430297?style=flat-square&labelColor=430297&logo=yahoo&logoColor=white&link=husson.j@yahoo.com" /></a>

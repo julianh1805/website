@@ -17,6 +17,7 @@
             <router-link class="navbar-item" @click="open = false" to="/formation-et-experiences">Formation et expériences</router-link>
             <router-link class="navbar-item" @click="open = false" to="/qualites">Qualites</router-link>
             <router-link class="navbar-item" @click="open = false" to="/contact">Contact</router-link>
+            <a class="navbar-item resume" href="./cv_julian-husson.pdf" download>Télécharger mon CV</a>
          </div>
       </nav>
     </div>
@@ -45,7 +46,7 @@ export default {
   methods:{
     goToHome(){
       this.$router.push({ path: '/' })
-    },
+    }
   }
 }
 </script>
@@ -131,21 +132,24 @@ export default {
     }
 
     .navbar-item {
-      color: $font-wbg-color;
       display: block;
       position: relative;
       padding: 3px 0;
       text-decoration: none;
       text-align: center;
-      &:hover{
-        color: $font-wbg-hover-color;
-        transition-duration: 300ms;
-        cursor: pointer;
+      &:not(.resume){
+        color: $font-wbg-color;
+        &:hover{
+          color: $font-wbg-hover-color;
+          transition-duration: 300ms;
+          cursor: pointer;
+        }
+      }
+      &:hover {
         &::before{
           background-color: $font-wbg-hover-color;
         }
       }
-
       &::before{
         content: "";
         position: absolute;
@@ -156,6 +160,10 @@ export default {
         transform: translateX(-50%);
         transition: width 175ms cubic-bezier(.4,.25,.3,1);
       }
+    }
+    .resume{
+      color: $font-wbg-hover-color;
+     cursor: pointer;
     }
   }
   }
