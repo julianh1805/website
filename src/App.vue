@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      title : 'Website'
+      title : 'Julian Husson'
     }
   }
 }

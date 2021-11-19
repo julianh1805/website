@@ -3,7 +3,7 @@
   <div class="box-face">
     <div class="box-text">
       <i v-if="language.typeLogo === 'i'" v-bind:class="language.logo"></i>
-      <img v-if="language.typeLogo === 'img'" :src="language.logo" alt="">
+      <img v-if="language.typeLogo === 'img'" :src="language.logo" v-bind:alt="'logo ' + language.title" >
     </div>
   </div>
     <div class="box-back">

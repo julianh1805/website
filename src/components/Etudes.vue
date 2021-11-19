@@ -2,25 +2,25 @@
   <div id="formation">
     <div class="container">
       <div class="section-main">
-        <h2>
+        <h1>
           <a class="r-link animated-underline animated-underline">
             Bienvenues à mon palmarès scolaire : les pourquoi de mes choix
           </a>
-        </h2>
+        </h1>
       </div>
     <div class="grid">
       <div class="row certifications">
         <div class="section">
-          <h3 class="title">Certifications</h3>
+          <h2 class="title">Certifications</h2>
           <hr class="sm-separator">
         </div>
           <div class="list-certif">
              <div v-for="certif in certifications" v-bind:class="{'form-hovered': show && certif.id === this.id}" class="certif">
                <div class="logo">
-                 <img :src="certif.image" />
+                 <img v-bind:alt="'logo ' + certif.titre" :src="certif.image" />
                </div>
                <div class="data">
-                 <h4 class="titre">{{ certif.titre }}</h4>
+                 <h3 class="titre">{{ certif.titre }}</h3>
                  <p class="delivre">{{ certif.delivre }}</p>
                </div>
              </div>
@@ -30,11 +30,11 @@
         <div class="list-form">
           <div v-for="(form,index) in formations" @mouseover.native="addHoverClass(form.id)" @mouseleave.native="deleteHoverClass(form.id)" class="formation">
             <div class="logo">
-              <img :src="form.image">
+              <img v-bind:alt="'logo ecole ' + form.ecole" :src="form.image">
             </div>
             <div class="data">
-              <h4 class="ecole">{{form.ecole}}</h4>
-              <h5 class="diplome">{{ form.diplome }}</h5>
+              <h3 class="ecole">{{form.ecole}}</h3>
+              <h4 class="diplome">{{ form.diplome }}</h4>
               <p class="annee">{{ form.annee }}</p>
               <br>
               <p class="description" v-html="form.description">

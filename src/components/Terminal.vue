@@ -2,16 +2,16 @@
   <div id="terminal">
     <div class="container">
       <div class="section">
-        <h3 class="title">La sécurité avant tout</h3>
+        <h2 class="title">La sécurité avant tout</h2>
         <hr class="sm-separator">
         <p>Comme disait ma mère dans sa langue natale : "Abrigate bien, Juli". C'est pour cela que l'ensemble des commandes lancées sur le Terminal ont été exectuées en SSH.</p>
       </div>
       <div class="terminal">
         <div class="terminal_task-bar">
           <div class="terminal-buttons">
-          <div class="terminal_circle terminal_circle-red"><img :src="require('../assets/close-icon.png')"/></div>
-          <div class="terminal_circle terminal_circle-yellow"><img :src="require('../assets/minus-icon.png')"/></div>
-          <div class="terminal_circle terminal_circle-green"><img :src="require('../assets/resize-icon.png')"/></div>
+          <div class="terminal_circle terminal_circle-red"><img alt="icon close" :src="require('../assets/close-icon.png')"/></div>
+          <div class="terminal_circle terminal_circle-yellow"><img alt="icon minus" :src="require('../assets/minus-icon.png')"/></div>
+          <div class="terminal_circle terminal_circle-green"><img alt="icon resize" :src="require('../assets/resize-icon.png')"/></div>
           </div>
           <p class="terminal-path">MBP de Julian</p>
         </div>

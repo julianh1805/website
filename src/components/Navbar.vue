@@ -2,7 +2,7 @@
     <div class="container">
       <nav id="navbar">
         <div class="resp-flex">
-          <img class="logo" @click="goToHome()" :src="require('../assets/logo-hj.png')"/>
+          <img alt="logo hj" class="logo" @click="goToHome()" :src="require('../assets/logo-hj.png')"/>
           <div v-if="windowWidth < 768" id="burger-menu">
             <label for="check">
               <input type="checkbox" id="check" @click.stop="open = !open"/>

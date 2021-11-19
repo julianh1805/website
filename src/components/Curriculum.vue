@@ -2,11 +2,11 @@
   <div id="curriculum">
     <div class="container">
       <div class="section">
-        <h3 class="title">CV : édition limitée</h3>
+        <h2 class="title">CV : édition limitée</h2>
         <hr class="sm-separator">
       </div>
       <div class="content">
-        <img :src="require('../assets/cv.png')">
+        <img alt="capture cv" :src="require('../assets/cv.png')">
         <div>
           <p>Pour les plus traditionnels, vous pouvez obtenir et partager mon <i>Curriculum Vitae</i> en cliquant sur le bouton ci-dessous.<br>Attention ! Il reste que *** unités.</p>
           <div class="cta center">

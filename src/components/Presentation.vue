@@ -4,17 +4,17 @@
       <div class="presentation">
         <div class="presentation-row">
           <div class="anim">
-            <img class="corner-tl" :src="require('../assets/corner-tl.png')" />
-            <img class="photo-profil" :src="require('../assets/profil.png')" />
-            <img class="corner-br" :src="require('../assets/corner-br.png')" />
+            <img alt="lucarne top gauche" class="corner-tl" :src="require('../assets/corner-tl.png')" />
+            <img alt="photo de profil" class="photo-profil" :src="require('../assets/profil.png')" />
+            <img alt="lucarne inférieur droite" class="corner-br" :src="require('../assets/corner-br.png')" />
           </div>
         </div>
         <div class="presentation-row">
-          <h2>
+          <h1>
             <a class="r-link animated-underline animated-underline">
               Développeur full-stack junior en région nantaise (Bretagne). "Mes lignes de code ne définissent pas qui je suis"
             </a>
-          </h2>
+          </h1>
           <p class="description">Après plus de 10 ans passés en Espagne et passionné de la technologie et de l'informatique depuis tout jeune, j'ai décidé de
             revenir en France pour poursuivre mes études dans le but de devenir développeur full-stack.
           </p>
@@ -48,7 +48,7 @@ export default {
 
 #presentation{
   margin-top: 8rem;
-  h2, h2 a{
+  h1, h1 a{
     font-size: 36px;
   }
   .presentation {

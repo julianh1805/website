@@ -1,11 +1,11 @@
 <template>
   <div id="contact">
     <div class="container">
-        <h2>
+        <h1>
           <a class="r-link animated-underline animated-underline">
             Entrons en contact
           </a>
-        </h2>
+        </h1>
       <section id="content">
         <form @submit.prevent="onSubmit" v-if="!loading && !send">
           <div class="form-group">
@@ -112,7 +112,7 @@ export default {
 #contact {
   margin-top: 8rem;
   text-align: center;
-  h2{
+  h1{
     font-size: 36px;
   }
   #content{
