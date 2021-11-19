@@ -8,7 +8,7 @@
             Page non trouvée</h4>
         </div>
         <div class="error-message">
-          <p>La page que vous avez tapé est inexistante ou quelqu'un vous a envoyé le mauvais lien ! Et oui, depuis la première "mise en prod", aucune route ou/et aucune page a été supprimée ou modifiée. <strong>Cliquez sur le bouton dessous pour revivre l'expérience.</strong></p>
+          <p class="ta-c">La page que vous avez tapé est inexistante ou quelqu'un vous a envoyé le mauvais lien ! Et oui, depuis la première "mise en prod", aucune route ou/et aucune page a été supprimée ou modifiée. <strong>Cliquez sur le bouton dessous pour revivre l'expérience.</strong></p>
           <div class="cta center">
             <button class="draw-main trans-main to-home" @click="goToHome()">Revenir à l'accueil</button>
           </div>
@@ -52,7 +52,6 @@ export default {
         padding-top: 30px;
         p{
           padding-bottom: 20px;
-          text-align: center;
         }
         .to-home{
           box-shadow: inset 0 0 0 2px $main-color;

@@ -1,6 +1,6 @@
 <template>
-  <div class="box">
-  <div class="box-face" v-bind:class="{ 'dark-highlight' : language.highlight}">
+  <div class="box" v-bind:class="{ 'dark-highlight' : language.highlight}">
+  <div class="box-face">
     <div class="box-text">
       <i v-if="language.typeLogo === 'i'" v-bind:class="language.logo"></i>
       <img v-if="language.typeLogo === 'img'" :src="language.logo" alt="">
@@ -73,8 +73,14 @@ export default {
 }
 
 .dark-highlight {
-  background-color: #323232!important;
-  border: 1px solid #323232!important;
+  .box-face{
+    background-color: #323232!important;
+
+  }
+  .box-back {
+    z-index:0;
+    background-image: linear-gradient( #9d9d9d, #bdbdbd);
+  }
 }
 
 .box-face{

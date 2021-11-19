@@ -1,7 +1,7 @@
 <img align="right" width="300" src="https://i2.wp.com/allhtaccess.info/wp-content/uploads/2018/03/programming.gif?fit=1281%2C716&ssl=1" />
 
-[![Julian](https://img.shields.io/badge/Julian%20-%23323330.svg?&style=for-the-badge&logo=badges&logoColor=black&color=0000FF)](https://github.com/iuricode/README-template/blob/main/badges/badges.md)
-[![Husson](https://img.shields.io/badge/husson%20-%23323330.svg?&style=for-the-badge&logo=cards%20estrelas&logoColor=black&color=FFFF00)](https://github.com/iuricode/README-template/blob/main/README-cards-stars/cards-stars.md)
+[![Julian](https://img.shields.io/badge/Julian%20-%23323330.svg?&style=for-the-badge&logo=badges&logoColor=black&color=0000FF)]()
+[![Husson](https://img.shields.io/badge/husson%20-%23323330.svg?&style=for-the-badge&logo=cards%20estrelas&logoColor=black&color=FFFF00)]()
 
 ## 👨 About me
 <p>Hi, I am Julian Husson, actually junior full-stack developer at <a href="https://biogasview.com">biogasview.com</a> and also software engineer student. 

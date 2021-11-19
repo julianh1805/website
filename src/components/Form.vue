@@ -28,11 +28,29 @@
         </div>
         <div id="cordonnees">
           <hr class="lg-separator" v-if="windowWidth < 768">
-          <div class="item" v-for="item in items">
+          <div class="item">
+            <a target="_blank" href="https://www.google.com/maps?channel=trow5&client=firefox-b-d&q=google+map+nantes+44300&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj0jaOey6T0AhUE3IUKHUaYAGkQ_AUoAXoECAEQAw">
             <span>
-             <i class="fas" v-bind:class="item.class"></i>
+             <i class="fas fa-map-marker-alt"></i>
             </span>
-            <p>{{ item.text }}</p>
+            <p>Nantes (Bretagne), France</p>
+            </a>
+          </div>
+          <div class="item">
+            <a target="_blank" href="tel:+330685487966">
+            <span>
+             <i class="fas fa-phone-alt"></i>
+            </span>
+            <p>06 85 48 79 66</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="mailto:husson.j@yahoo.com">
+            <span>
+             <i class="fas fa-envelope"></i>
+            </span>
+            <p>husson.j@yahoo.com</p>
+            </a>
           </div>
         </div>
       </section>
@@ -54,12 +72,7 @@ export default {
       submitted: false,
       loading: false,
       send: false,
-      windowWidth: window.innerWidth,
-      items: [
-        {class: 'fa-map-marker-alt', text: 'Nantes (Bretagne), France'},
-        {class: 'fa-phone-alt', text: '06 85 48 79 66'},
-        {class: 'fa-envelope', text: 'husson.j@yahoo.com'},
-      ]
+      windowWidth: window.innerWidth
     }
   },
   methods: {
@@ -74,7 +87,6 @@ export default {
                 message: this.message
               }).then(res => {
                 this.name = '';
-                this.email = '';
                 this.send = true;
                 this.loading = false
           })
@@ -118,6 +130,15 @@ export default {
     .item{
       padding-bottom: 36px;
       width: 70%;
+      &:hover{
+        transition-duration: 600ms;
+        transform: scale(1.1);
+        cursor: pointer;
+        span{
+          color: $font-wbg-hover-color!important;
+          transition-duration: 600ms;
+        }
+      }
       &:not(:last-child){
         p{
           padding-bottom: 20px;

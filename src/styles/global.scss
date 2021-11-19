@@ -15,8 +15,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+a{
+  text-decoration: none;
+}
+
 textarea{
   font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+
+.ta-c{
+  text-align: center;
 }
 
 .container{

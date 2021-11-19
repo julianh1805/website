@@ -24,8 +24,8 @@
         </div>
       </div>
       <div class="cta center">
-        <button class="draw-main trans-main to-formation" @click="goToFormation">Visiter mon palmarès</button>
-        <button class="draw-main trans-main to-contact" @click="goToContact">Me contacter</button>
+        <button class="draw-main trans-main to-formation" @click="goToRoute('qualites')">Explorer mes qualités</button>
+        <button class="draw-main trans-main to-contact" @click="goToRoute('contact')">Me contacter</button>
       </div>
     </div>
   </div>
@@ -41,6 +41,11 @@ export default {
         { id: "bgw", image: require('../assets/malt-logo.png'), entreprise: 'Biogasview', date: '2017 - présent', poste: 'Développeur Web', description: "Création d'applications Web sous les langages Angular et Java <br>Participer a l'amélioration de l'expérience utilisateur de la plateforme Web<br>Refonte du site internet (Wordpress)"},
         { id: "bgw", image: require('../assets/iraiser-logo.png'), entreprise: 'Biogasview', date: '2017 - présent', poste: 'Développeur Web', description: "Création d'applications Web sous les langages Angular et Java <br>Participer a l'amélioration de l'expérience utilisateur de la plateforme Web<br>Refonte du site internet (Wordpress)"},
       ],
+    }
+  },
+  methods: {
+    goToRoute(route){
+      this.$router.push({ path: "/" + route});
     }
   },
   mounted(){

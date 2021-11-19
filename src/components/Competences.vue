@@ -2,7 +2,7 @@
   <div id="competences">
     <div class="container">
       <div id="content">
-        <h2>
+        <h2 class="ta-c">
           <a class="r-link animated-underline animated-underline">
             Un passion qui va du front... au back
           </a>
@@ -54,7 +54,6 @@ export default {
 #competences {
   margin-top: 100px;
   h2{
-    text-align: center;
     font-size: 36px;
   }
 }
