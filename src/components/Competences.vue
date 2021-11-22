@@ -7,9 +7,10 @@
             Un passion qui va du front... au back
           </a>
         </h1>
-        <p class="description">Malgré ma passion pour le front, mon arrivé à EPSI m'a permis de découvrir et apprécier le façon d'affronter les complexités auxquelles on peut se confrotter lors du développement un back-end. J'aime le défi. De plus, je suis non seulement passioné par les langages mais aussi par tout ce qui entoure un projet informatique :
-          la gestion de projet (en agile ou en V) passant par la conception puis aussi par les tests (surprise !). J'ai ainsi un petit coup de foudre pour le monde Ops, je mets en place tous les jours les pratiques CI/CD (à l'aide d'outils tels Gitlab et Github-CircleCI) et je désire un jour travaillé Kubernetes sur un projet plus poussé malgré sa complexité.
-          Passioné par la creation des sites/applications dont leur noyau devrait être expèrience utilisateur, j'ai très présent les notions de responsive design, PWA et First Mobile.
+        <p class="description">Malgré ma passion pour le front, mon arrivée à EPSI m'a permis de découvrir et apprécier la façon d'affronter les complexités auxquelles on peut se confronter lors du développement d'un back-end. J'aime le défi. De plus, je suis non seulement passioné par les langages mais aussi par tout ce qui entoure un projet informatique :
+          la gestion de projet (en agile ou en V) passant par la conception puis aussi par les tests (surprise !). J'ai aussi un petit coup de foudre pour le monde DevOps, je mets en place tous les jours les pratiques CI/CD (à l'aide d'outils tels Gitlab et CircleCI sur Github).
+          Passioné par la creation des sites/applications dont leur noyau devrait être l'expérience utilisateur, j'ai très présent les notions de responsive design, PWA et First Mobile.
+          <br>Hors informatique, j'ai des compétences en design graphique (maquettes, création de logo et bannières), en référencement ainsi qu'un gôut pour les langues. Je parle français, espagnol, catalan et anglais courament et une compétence avancée en italien !
         </p>
       </div>
       <section class="section-diamonds">
