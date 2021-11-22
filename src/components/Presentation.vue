@@ -1,31 +1,31 @@
 <template>
   <div id="presentation">
     <div class="container">
-      <div class="grid">
-        <div class="row">
+      <div class="presentation">
+        <div class="presentation-row">
           <div class="anim">
-            <img class="corner-tl" :src="require('../assets/corner-tl.png')" />
-            <img class="photo-profil" :src="require('../assets/profil.png')" />
-            <img class="corner-br" :src="require('../assets/corner-br.png')" />
+            <img alt="lucarne top gauche" class="corner-tl" :src="require('../assets/corner-tl.png')" />
+            <img alt="photo de profil" class="photo-profil" :src="require('../assets/profil.png')" />
+            <img alt="lucarne inférieur droite" class="corner-br" :src="require('../assets/corner-br.png')" />
           </div>
         </div>
-        <div class="row">
-          <h2>
+        <div class="presentation-row">
+          <h1>
             <a class="r-link animated-underline animated-underline">
               Développeur full-stack junior en région nantaise (Bretagne). "Mes lignes de code ne définissent pas qui je suis"
             </a>
-          </h2>
+          </h1>
           <p class="description">Après plus de 10 ans passés en Espagne et passionné de la technologie et de l'informatique depuis tout jeune, j'ai décidé de
             revenir en France pour poursuivre mes études dans le but de devenir développeur full-stack.
           </p>
           <br>
           <p class="description">
-            Après plus de 10 ans passés en Espagne et passionné de la technologie et de l'informatique depuis tout jeune, j'ai décidé de
-            France pour poursuivre mes études dans le but de devenir développeur full-stack, vraiment full full.
+            Ayant obtenu un titre en tant que "Chef de projet digital" en 2020 qui ma permis de découvir les différents métiers du Web (chef de projet, design graphique, référencement) et en ayant appris le développement Web de façon totalement autodidacte (cours sur Udemy, Youtube, projets personnels)
+            j'ai décidé de poursuivre mes études en ingénierie informatique. Je suis actuellement (et depuis 3 ans) développeur Web au sein de <a href="https://biogasview.com" target="_blank">Biogasview</a>. Ce site Web vous permettra de savoir plus sur mon parcours ainsi que sur ma personnalité...
           </p>
           <div class="cta">
-            <button class="draw-main trans-main to-formation" @click="goToFormation">Visiter mon palmarès</button>
-            <button class="draw-main trans-main to-contact" @click="goToContact">Me contacter</button>
+            <button class="draw-main trans-main to-formation" @click="goToRoute('formation-et-experiences')">Découvrir mon parcours</button>
+            <button class="draw-main trans-main to-contact" @click="goToRoute('contact')">Me contacter</button>
           </div>
         </div>
       </div>
@@ -37,11 +37,8 @@
 export default {
   name: 'Presentation',
   methods: {
-      goToFormation(){
-        this.$router.push({ path: '/formation'})
-      },
-      goToContact(){
-        this.$router.push({ path: '/contact'})
+      goToRoute(route){
+        this.$router.push({ path: "/" + route});
       }
   }
 }
@@ -51,16 +48,16 @@ export default {
 
 #presentation{
   margin-top: 8rem;
-  h2, h2 a{
+  h1, h1 a{
     font-size: 36px;
   }
-  .grid {
+  .presentation {
     width: 100%;
     margin: 0 auto;
     display: grid;
     grid-gap: 4rem;
     grid-template-columns: repeat(1, 1fr);
-    .row{
+    .presentation-row{
       .anim{
         width: 90%;
         margin: auto auto 35px auto;
@@ -82,6 +79,9 @@ export default {
       }
       .description{
         font-size: 18px;
+        a{
+          color: $main-color
+        }
       }
     }
     .cta{
@@ -123,7 +123,7 @@ export default {
 }
 
   @media (min-width: 601px) {
-  #presentation .grid {
+  #presentation .presentation {
     grid-template-columns: minmax(min-content, 2fr) minmax(min-content, 4fr);
   }
 }

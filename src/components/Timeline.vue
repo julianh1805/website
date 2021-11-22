@@ -3,9 +3,7 @@
     <div class="container">
       <div class="section-main">
         <h2>
-          <a class="r-link animated-underline animated-underline">
-            Timeline de mon progrès
-          </a>
+          <a class="r-link animated-underline animated-underline">Timeline de mon progrès</a>
         </h2>
       </div>
       <div class="anim-container">
@@ -13,19 +11,19 @@
           <div class="line"></div>
           <div class="anim-section" v-for="(exp,index) in experiences">
             <div class="bead">
-              <img :src="exp.image" />
+              <img v-bind:alt="'logo ' + exp.entreprise" :src="exp.image" />
             </div>
             <div class="content">
-              <h4>{{ exp.date }}</h4>
-              <h2>{{ exp.poste }} - {{ exp.entreprise }}</h2>
+              <p class="date">{{ exp.date }}</p>
+              <h3>{{ exp.poste }} - {{ exp.entreprise }}</h3>
               <p v-html="exp.description"></p>
             </div>
           </div>
         </div>
       </div>
       <div class="cta center">
-        <button class="draw-main trans-main to-formation" @click="goToFormation">Visiter mon palmarès</button>
-        <button class="draw-main trans-main to-contact" @click="goToContact">Me contacter</button>
+        <button class="draw-main trans-main to-formation" @click="goToRoute('qualites')">Explorer mes qualités</button>
+        <button class="draw-main trans-main to-contact" @click="goToRoute('contact')">Me contacter</button>
       </div>
     </div>
   </div>
@@ -37,10 +35,15 @@ export default {
   data() {
     return {
       experiences : [
-        { id: "bgw", image: require('../assets/biogasview-logo.png'), entreprise: 'Biogasview', date: '2017 - présent', poste: 'Développeur Web', description: "Création d'applications Web sous les langages Angular et Java <br>Participer a l'amélioration de l'expérience utilisateur de la plateforme Web<br>Refonte du site internet (Wordpress)"},
-        { id: "bgw", image: require('../assets/malt-logo.png'), entreprise: 'Biogasview', date: '2017 - présent', poste: 'Développeur Web', description: "Création d'applications Web sous les langages Angular et Java <br>Participer a l'amélioration de l'expérience utilisateur de la plateforme Web<br>Refonte du site internet (Wordpress)"},
-        { id: "bgw", image: require('../assets/iraiser-logo.png'), entreprise: 'Biogasview', date: '2017 - présent', poste: 'Développeur Web', description: "Création d'applications Web sous les langages Angular et Java <br>Participer a l'amélioration de l'expérience utilisateur de la plateforme Web<br>Refonte du site internet (Wordpress)"},
+        { id: "bgw", image: require('../assets/biogasview-logo.png'), entreprise: 'Biogasview', date: '2019 - présent (alternance)', poste: 'Développeur Web', description: "Evolution de l'ERP<br>Participer a l'amélioration de l'expérience utilisateur de la plateforme Web<br>Assister les utilisateurs (maintenance corrective)<br>Refonte du site internet (Wordpress)"},
+        { id: "bgw", image: require('../assets/malt-logo.png'), entreprise: 'Malt', date: '2018 - présent (temps partiel)', poste: 'Développeur Web freelance', description: "Dans le but de m'améliorer et de m'aventurer dans le monde professionnel, j'effectue des missions en freelance, principalement sur la plateforme Malt."},
+        { id: "bgw", image: require('../assets/iraiser-logo.png'), entreprise: 'iRaiser', date: '2018', poste: 'Support technique et recette informatique (stage)', description: "Stage de support technique et recette informatique consistant à:<br>Assister les utilisateurs dans l'utilisation d'un CMS<br>Effectuer les paramétrages<br>Recetter les applications"},
       ],
+    }
+  },
+  methods: {
+    goToRoute(route){
+      this.$router.push({ path: "/" + route});
     }
   },
   mounted(){
@@ -103,6 +106,9 @@ export default {
 
   .section-main{
    padding-bottom: 25px;
+    h2{
+      font-size: 36px;
+    }
   }
 
   .cta{
@@ -178,7 +184,7 @@ export default {
   min-height: 13rem;
   border-radius: 0;
 
-  h4 {
+  .date {
     color: $main-color;
     font-weight: 400;
   }

@@ -11,7 +11,8 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'Accueil | Julian Husson'
+      title: 'Développeur full-stack junior en région nantaise (Bretagne) | Julian Husson',
+      description: "fezfzfezz"
     }
   },
   {
@@ -19,7 +20,7 @@ const routes = [
     name: 'FormationExperiences',
     component: FormationExperiences,
     meta: {
-      title: 'Formation et experiences | Julian Husson'
+      title: 'Un long parcours pour devenir un meilleur développeur full-stack | Julian Husson'
     }
   },
   {
@@ -27,7 +28,7 @@ const routes = [
     name: 'Qualites',
     component: Qualites,
     meta: {
-      title: 'Qualites | Julian Husson'
+      title: 'Angular, Java... une passion qui va du front au back | Julian Husson'
     }
   },
   {
@@ -35,12 +36,15 @@ const routes = [
     name: 'Contact',
     component: Contact,
     meta: {
-      title: 'Contact | Julian Husson'
+      title: 'Vous voulez plus d\'information sur moi ? Echangeons ensemble ! | Julian Husson'
     }
   },
   {
     path: "/:pathMatch(.*)*",
     component: Page404,
+    meta: {
+      title: 'Erreur 404 : la page que vous avez tapé est inexistante | Julian Husson'
+    }
   }
 ]
 

@@ -1,14 +1,14 @@
 <template>
   <div id="not-found">
     <div class="container centered">
-      <img :src="require('../assets/khaby-lame.gif')" alt="this slowpoke moves"  width="250" />
+      <img :src="require('../assets/khaby-lame.gif')" alt="gif khaby lame"  width="250" />
       <div class="error">
         <div class="error-title">
-          <h4><span class="blue-hook">404</span>
-            Page non trouvée</h4>
+          <h1><span class="blue-hook">404</span>
+            Page non trouvée</h1>
         </div>
         <div class="error-message">
-          <p>La page que vous avez tapé est inexistante ou quelqu'un vous a envoyé le mauvais lien ! Et oui, depuis la première "mise en prod", aucune route ou/et aucune page a été supprimée ou modifiée. <strong>Cliquez sur le bouton dessous pour revivre l'expérience.</strong></p>
+          <p class="ta-c">La page que vous avez tapé est inexistante ou quelqu'un vous a envoyé le mauvais lien ! Et oui, depuis la première "mise en prod", aucune route ou/et aucune page a été supprimée ou modifiée. <strong>Cliquez sur le bouton dessous pour revivre l'expérience.</strong></p>
           <div class="cta center">
             <button class="draw-main trans-main to-home" @click="goToHome()">Revenir à l'accueil</button>
           </div>
@@ -37,7 +37,7 @@ export default {
     .error{
       padding-bottom: 40px;
       .error-title{
-        h4{
+        h1{
           font-size: 32px;
           font-weight: 600;
           text-align: center;
@@ -52,7 +52,6 @@ export default {
         padding-top: 30px;
         p{
           padding-bottom: 20px;
-          text-align: center;
         }
         .to-home{
           box-shadow: inset 0 0 0 2px $main-color;

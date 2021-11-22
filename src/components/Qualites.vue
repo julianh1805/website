@@ -2,7 +2,7 @@
   <div id="qualites">
     <div class="container">
       <div class="section">
-        <h3 class="title">Mes qualités et mes défauts</h3>
+        <h2 class="title">Mes qualités et mes défauts</h2>
         <hr class="sm-separator">
         <q class="content" cite="https://www.huxley.net/bnw/four.html">
           Je ne serai pas modeste. Humble tant qu'on voudra, mais pas modeste. La modestie est la vertu des tièdes.
@@ -10,25 +10,10 @@
         <cite class="content"> Jean-Paul Sartre</cite>
       </div>
       <div class="grid">
-        <div class="qlte q1">
-          <img :src="require('../assets/ambition-determine-icon.png')"/>
-          <h4>Ambitieux et determiné</h4>
-          <p>Les rêves sont comme les buts. C'est bien d'en vouloir, mais il faut se les procurer</p>
-        </div>
-        <div class="qlte q2">
-          <img :src="require('../assets/force-proposition-icon.png')"/>
-          <h4>Fort de proposition</h4>
-          <p>J'aime bien découvrir, apprendre, partager et appliquer. Dans cet ordre</p>
-        </div>
-        <div class="qlte q3">
-          <img :src="require('../assets/teamwork-icon.png')"/>
-          <h4>Esprit d'équipe</h4>
-          <p>Malgré que je sois un loup solitaire, je ne suis rien sans les personnes qui m'entourent</p>
-        </div>
-        <div class="qlte q4">
-          <img :src="require('../assets/overwork-icon.png')"/>
-          <h4>(Trop) perfectioniste</h4>
-          <p>A force de vouloir toucher de trop près les étoiles, on risque de s'aveugler</p>
+        <div class="qlte" :class="'q' + (index + 1)" v-for="(q, index) in qualites">
+          <img v-bind:alt="'icon ' + q.titre" :src="q.img"/>
+          <h3>{{q.titre}}</h3>
+          <p>{{q.description}}</p>
         </div>
       </div>
     </div>
@@ -38,6 +23,16 @@
 <script>
 export default {
   name: 'Qualites',
+  data(){
+    return {
+      qualites: [
+        {img: require('../assets/ambition-determine-icon.png'), titre: 'Ambitieux et determiné', description: 'Les rêves sont comme les buts. C\'est bien d\'en vouloir, mais il faut se les procurer'},
+        {img: require('../assets/force-proposition-icon.png'), titre: 'Fort de proposition', description: 'Les rêves sont comme les buts. J\'aime bien découvrir, apprendre, partager et appliquer. Dans cet ordre'},
+        {img: require('../assets/teamwork-icon.png'), titre: 'Esprit d\'équipe', description: 'Malgré que je sois un loup solitaire, je ne suis rien sans les personnes qui m\'entourent'},
+        {img: require('../assets/overwork-icon.png'), titre: '(Trop) perfectioniste', description: 'A force de vouloir toucher de trop près les étoiles, on risque de s\'aveugler'}
+      ],
+    }
+  },
 }
 </script>
 
@@ -54,7 +49,7 @@ export default {
            padding: 1em;
            border-radius: 2px;
            transition-duration: 700ms;
-           h4{
+           h3{
              color: $font-main-title-color;
              font-size: 18px;
              margin: 8px 0;

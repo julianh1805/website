@@ -1,21 +1,22 @@
 <template>
   <div id="footer">
     <div id="full-bg">
-      <div class="center">
-        <h4 class="yellow-hook">C'est le moment de faire connaisance. <br>Faites le premier pas</h4>
+      <div class="center ta-c">
+        <h2 class="yellow-hook">C'est le moment de faire connaisance. <br>Faites le premier pas</h2>
         <p class="pub">(malgré les apparences, cet espace n'est pas sponsorisé par Ikea)</p>
-        <button class="draw">Contacter Julian Husson</button>
+        <a v-if="this.$route.name === 'Contact'" href="mailto:husson.j@yahoo.com"><button class="draw">Contacter Julian Husson</button></a>
+        <button v-else class="draw" @click="this.$router.push({ path: '/contact'})">Contacter Julian Husson</button>
       </div>
     </div>
     <div class="container">
         <div id="rrss">
-          <a href="https://linkedin.com" target="_blank"><img class="logo" :src="require('../assets/linkedin-logo.png')" /></a>
-          <a href="https://linkedin.com" target="_blank"><img class="logo" :src="require('../assets/github-logo.png')" /></a>
-          <a href="https://linkedin.com" target="_blank"><img class="logo" :src="require('../assets/malt-logo.png')" /></a>
-          <a href="https://linkedin.com" target="_blank"><img class="logo" :src="require('../assets/instagram-logo.png')" /></a>
+          <a href="https://www.linkedin.com/in/julian-husson-692067152/" target="_blank"><img alt="logo linkedin" class="logo" :src="require('../assets/linkedin-logo.png')" /></a>
+          <a href="https://github.com/julianh1805" target="_blank"><img alt="logo github" class="logo" :src="require('../assets/github-logo.png')" /></a>
+          <a href="https://www.malt.ch/profile/julianhusson" target="_blank"><img alt="logo malt" class="logo" :src="require('../assets/malt-logo.png')" /></a>
+          <a href="https://codepen.io/Julianh1805" target="_blank"><img alt="logo codepen" class="logo" :src="require('../assets/codepen-logo.png')" /></a>
         </div>
       <hr class="separator">
-      <p class="copyright">Aucun droit réservé, servez-vous © Julian Husson {{ new Date().getFullYear() }}</p>
+      <p class="copyright ta-c">Aucun droit réservé, servez-vous © Julian Husson {{ new Date().getFullYear() }}</p>
     </div>
   </div>
 </template>
@@ -41,7 +42,6 @@ export default {
       margin: auto;
       display: block;
       padding: 150px 0;
-      text-align: center;
       p{
         color: white;
         margin: 20px 0;
@@ -72,7 +72,6 @@ export default {
   .copyright{
     font-size: 14px;
     margin-bottom: 15px;
-    text-align: center;
   }
 }
 
