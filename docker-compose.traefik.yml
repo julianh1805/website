@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  traefik:
+    image: traefik:v2.5.4
+    environment:
+      - TRAEFIK_ENTRYPOINTS_WEB_ADDRESS=:80
+      - TRAEFIK_API_INSECURE=true
+      - TRAEFIK_API_DASHBOARD=true
+      - TRAEFIK_PROVIDERS_DOCKER=true
+      - TRAEFIK_PROVIDERS_DOCKER_EXPOSEDBYDEFAULT=false
+    ports:
+      - '80:80'
+      - '8080:8080'
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock:ro'
+    networks:
+      - web
+networks:
+  web:
+    external: true

@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  vueapp:
+    build: .
+    ports:
+      - '3000:3000'
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.vueapp.rule=Host(`catapp.localhost`)'
+      - "traefik.http.routers.vueapp.entrypoints=web"
+      - "traefik.http.routers.vueapp.service=vueapp"
+      - "traefik.http.services.vueapp.loadbalancer.server.port=3000"
+    depends_on:
+      - traefik
+    networks:
+      - web
+networks:
+  web:
+    external: true
