@@ -1,15 +1,16 @@
 version: '3.8'
 services:
-  vueapp:
+  website-app:
+    container_name: website-app
     build: .
     ports:
       - '80'
     labels:
       - 'traefik.enable=true'
-      - 'traefik.http.routers.vueapp.rule=Host(`julian-husson.com`)'
-      - "traefik.http.routers.vueapp.entrypoints=web"
-      - "traefik.http.routers.vueapp.service=vueapp"
-      - "traefik.http.services.vueapp.loadbalancer.server.port=80"
+      - 'traefik.http.routers.website-app.rule=Host(`julian-husson.com`)'
+      - "traefik.http.routers.website-app.entrypoints=web"
+      - "traefik.http.routers.website-app.service=website-app"
+      - "traefik.http.services.website-app.loadbalancer.server.port=80"
     networks:
       - web
 networks:

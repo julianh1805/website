@@ -1,16 +1,22 @@
 version: '3.9'
 services:
-  traefik:
+  website-traefik:
+    container_name: website-traefik
     image: traefik:v2.5.4
     environment:
       - TRAEFIK_ENTRYPOINTS_WEB_ADDRESS=:80
-      - TRAEFIK_API_INSECURE=true
-      - TRAEFIK_API_DASHBOARD=true
+      - TRAEFIK_API=true
       - TRAEFIK_PROVIDERS_DOCKER=true
       - TRAEFIK_PROVIDERS_DOCKER_EXPOSEDBYDEFAULT=false
     ports:
       - '80:80'
-      - '8080:8080'
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.dashboard.rule=Host(`monitoring.julian-husson.com`)"
+      - "traefik.http.routers.dashboard.service=api@internal"
+      - "traefik.http.services.website-traefik.loadbalancer.server.port=8080"
+      - "traefik.http.routers.dashboard.middlewares=auth"
+      - "traefik.http.middlewares.auth.basicauth.users=admin:$$1$$zkej2KMN$$7CqPaKy9F.XjLvdI6GP2y0"
     volumes:
       - '/var/run/docker.sock:/var/run/docker.sock:ro'
     networks:
