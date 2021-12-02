@@ -12,7 +12,7 @@
         <div class="presentation-row">
           <h1>
             <a class="r-link animated-underline animated-underline">
-              Développeur full-stack junior en région nantaise (Bretagne). "Mes lignes de code ne définissent pas qui je suis"
+              Développeur full-stack junior en région nantaise (Bretagne). "Mes lignes de code définissent qui je suis"
             </a>
           </h1>
           <p class="description">Après plus de 10 ans passés en Espagne et passionné de la technologie et de l'informatique depuis tout jeune, j'ai décidé de
@@ -20,7 +20,7 @@
           </p>
           <br>
           <p class="description">
-            Ayant obtenu un titre en tant que "Chef de projet digital" en 2020 qui ma permis de découvir les différents métiers du Web (chef de projet, design graphique, référencement) et en ayant appris le développement Web de façon totalement autodidacte (cours sur Udemy, Youtube, projets personnels)
+            Ayant obtenu un titre en tant que "Chef de projet digital" en 2020 qui m'a permis de découvir les différents métiers du Web (chef de projet, design graphique, référencement) et en ayant appris le développement Web de façon totalement autodidacte (cours sur Udemy, Youtube, projets personnels)
             j'ai décidé de poursuivre mes études en ingénierie informatique. Je suis actuellement (et depuis 3 ans) développeur Web au sein de <a href="https://biogasview.com" target="_blank">Biogasview</a>. Ce site Web vous permettra de savoir plus sur mon parcours ainsi que sur ma personnalité...
           </p>
           <div class="cta">

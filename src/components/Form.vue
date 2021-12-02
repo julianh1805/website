@@ -132,7 +132,7 @@ export default {
       width: 70%;
       &:hover{
         transition-duration: 600ms;
-        transform: scale(1.1);
+        transform: scale(1.05);
         cursor: pointer;
         span{
           color: $font-wbg-hover-color!important;
