@@ -2,7 +2,9 @@ version: '3.8'
 services:
   website-app:
     container_name: website-app
-    build: .
+    build:
+      context: .
+      dockerfile: docker-images/Dockerfile
     ports:
       - '80'
     labels:
