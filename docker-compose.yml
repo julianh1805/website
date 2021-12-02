@@ -2,7 +2,9 @@ version: '3.8'
 services:
   website-app:
     container_name: website-app
-    build: .
+    build:
+      context: .
+      dockerfile: docker-images/Dockerfile
     ports:
       - '80'
     labels:
@@ -11,6 +13,10 @@ services:
       - "traefik.http.routers.website-app.entrypoints=web"
       - "traefik.http.routers.website-app.service=website-app"
       - "traefik.http.services.website-app.loadbalancer.server.port=80"
+    environment:
+      - VUE_APP_EMAILJS_USER_ID=user_ZXlnTIvOHoMpziUEbZnAe
+      - VUE_APP_EMAILJS_TEMPLATE_ID=template_pf2uwsf
+      - VUE_APP_EMAILJS_SERVICE_ID=service_rw3tpdf
     networks:
       - web
 networks:

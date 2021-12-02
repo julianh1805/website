@@ -2,10 +2,10 @@
     <div class="container">
       <nav id="navbar">
         <div class="resp-flex">
-          <img alt="logo hj" class="logo" @click="goToHome()" :src="require('../assets/logo-hj.png')"/>
+          <img alt="logo hj" class="logo" @click="goToRoute('/')" :src="require('../assets/logo-hj.png')"/>
           <div v-if="windowWidth < 768" id="burger-menu">
             <label for="check">
-              <input type="checkbox" id="check" @click.stop="open = !open"/>
+              <input type="checkbox" id="check" v-model="open" @click.stop="open = !open"/>
               <span></span>
               <span></span>
               <span></span>
@@ -13,10 +13,10 @@
           </div>
         </div>
           <div v-bind:class="{'collapsed': !open && windowWidth < 768}" class="lg-menu">
-            <router-link class="navbar-item" @click="open = false" to="/">Accueil</router-link>
-            <router-link class="navbar-item" @click="open = false" to="/formation-et-experiences">Formation et expériences</router-link>
-            <router-link class="navbar-item" @click="open = false" to="/qualites">Qualites</router-link>
-            <router-link class="navbar-item" @click="open = false" to="/contact">Contact</router-link>
+            <a class="navbar-item" @click="goToRoute('/')">Accueil</a>
+            <a class="navbar-item" @click="goToRoute('/formation-et-experiences')">Formation et expériences</a>
+            <a class="navbar-item" @click="goToRoute('/qualites')">Qualites</a>
+            <a class="navbar-item" @click="goToRoute('/contact')">Contact</a>
             <a class="navbar-item resume" href="./cv_julian-husson.pdf" download>Télécharger mon CV</a>
          </div>
       </nav>
@@ -44,9 +44,10 @@ export default {
     }
   },
   methods:{
-    goToHome(){
-      this.$router.push({ path: '/' })
-    }
+    goToRoute(route){
+      this.open = false;
+      this.$router.push({ path: route })
+    },
   }
 }
 </script>

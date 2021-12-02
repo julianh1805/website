@@ -11,7 +11,7 @@
           <p>Pour les plus traditionnels, vous pouvez obtenir et partager mon <i>Curriculum Vitae</i> en cliquant sur le bouton ci-dessous.<br>Attention ! Il reste que *** unités.</p>
           <div class="cta center">
             <a href="./cv_julian-husson.pdf" download>
-            <button class="draw-main trans-main to-home">Telecharger le CV</button>
+            <button class="draw-main trans-main to-home">Telecharger mon CV</button>
             </a>
           </div>
         </div>
@@ -40,6 +40,7 @@ export default {
       text-align: center;
     }
     .to-home{
+      width: 100%;
       box-shadow: inset 0 0 0 2px $main-color;
       color: white;
       background: $main-color;
@@ -57,7 +58,7 @@ export default {
   }
 }
 
-@media (min-width: 276px) {
+@media (min-width: 614px) {
   .content{
     flex-direction: row;
     align-items: center;
