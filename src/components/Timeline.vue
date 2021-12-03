@@ -3,7 +3,7 @@
     <div class="container">
       <div class="section-main">
         <h2>
-          <a class="r-link animated-underline animated-underline">Timeline de mon progrès</a>
+          <a class="r-link animated-underline animated-underline">Timeline de mon progrès professionel</a>
         </h2>
       </div>
       <div class="anim-container">

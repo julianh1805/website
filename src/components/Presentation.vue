@@ -12,11 +12,11 @@
         <div class="presentation-row">
           <h1>
             <a class="r-link animated-underline animated-underline">
-              Développeur full-stack junior en région nantaise (Bretagne). "Mes lignes de code définissent qui je suis"
+              Développeur full stack junior en région nantaise. "Mes lignes de code définissent qui je suis"
             </a>
           </h1>
           <p class="description">Après plus de 10 ans passés en Espagne et passionné de la technologie et de l'informatique depuis tout jeune, j'ai décidé de
-            revenir en France pour poursuivre mes études dans le but de devenir développeur full-stack.
+            revenir en France pour poursuivre mes études dans le but de devenir développeur full stack.
           </p>
           <br>
           <p class="description">
@@ -24,7 +24,7 @@
             j'ai décidé de poursuivre mes études en ingénierie informatique. Je suis actuellement (et depuis 3 ans) développeur Web au sein de <a href="https://biogasview.com" target="_blank">Biogasview</a>. Ce site Web vous permettra de savoir plus sur mon parcours ainsi que sur ma personnalité...
           </p>
           <div class="cta">
-            <button class="draw-main trans-main to-formation" @click="goToRoute('formation-et-experiences')">Découvrir mon parcours</button>
+            <button class="draw-main trans-main to-formation" @click="goToRoute('formation-et-experiences')">Découvrir mon palmarès</button>
             <button class="draw-main trans-main to-contact" @click="goToRoute('contact')">Me contacter</button>
           </div>
         </div>
