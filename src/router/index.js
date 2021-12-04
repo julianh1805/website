@@ -11,7 +11,7 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'Développeur full-stack junior en région nantaise (Bretagne) | Julian Husson',
+      title: 'Développeur full-stack junior en région nantaise | Julian Husson',
       description: "fezfzfezz"
     }
   },

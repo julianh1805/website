@@ -27,7 +27,7 @@ export default {
     return {
       qualites: [
         {img: require('../assets/ambition-determine-icon.png'), titre: 'Ambitieux et determiné', description: 'Les rêves sont comme les buts. C\'est bien d\'en vouloir, mais il faut se les procurer'},
-        {img: require('../assets/force-proposition-icon.png'), titre: 'Fort de proposition', description: 'Les rêves sont comme les buts. J\'aime bien découvrir, apprendre, partager et appliquer. Dans cet ordre'},
+        {img: require('../assets/force-proposition-icon.png'), titre: 'Fort de proposition', description: 'J\'aime bien découvrir, apprendre, appliquer et partager. Dans cet ordre'},
         {img: require('../assets/teamwork-icon.png'), titre: 'Esprit d\'équipe', description: 'Malgré que je sois un loup solitaire, je ne suis rien sans les personnes qui m\'entourent'},
         {img: require('../assets/overwork-icon.png'), titre: '(Trop) perfectioniste', description: 'A force de vouloir toucher de trop près les étoiles, on risque de s\'aveugler'}
       ],
