@@ -1,4 +1,4 @@
-import { createApp, VueElement } from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
@@ -20,10 +20,10 @@ app.config.globalProperties.$languages = [
     { title: 'JavaScript', highlight: false, typeLogo: 'i', logo: 'fab fa-js', oneStar: 3, halfStar: 0, emptyStar: 2},
     { title: 'Python', highlight: false, typeLogo: 'img', logo: require('../src/assets/python-logo.png'), oneStar: 2, halfStar: 1, emptyStar: 2},
     { title: 'Java', highlight: true, typeLogo: 'i', logo: 'fab fa-java', oneStar: 3, halfStar: 1, emptyStar: 1},
-    { title: 'NodeJS', highlight: false, typeLogo: 'i', logo: 'fab fa-node-js', oneStar: 3, halfStar: 0, emptyStar: 2},
+    { title: 'Traefik', highlight: false, typeLogo: 'img', logo: require('../src/assets/traefik-logo.png'), oneStar: 3, halfStar: 1, emptyStar: 1},
     { title: 'Docker', highlight: false, typeLogo: 'i', logo: 'fab fa-docker', oneStar: 3, halfStar: 0, emptyStar: 2},
     { title: 'PostgreSQL', highlight: false, typeLogo: 'img', logo: require('../src/assets/postgresql-logo.png'), oneStar: 3, halfStar: 0, emptyStar: 2},
-    { title: 'MongoDB', highlight: false, typeLogo: 'img', logo: require('../src/assets/mongo-db-logo.png'), oneStar: 3, halfStar: 1, emptyStar: 1},
+    { title: 'NodeJS', highlight: false, typeLogo: 'i', logo: 'fab fa-node-js', oneStar: 3, halfStar: 0, emptyStar: 2},
     { title: 'CI/CD', highlight: false, typeLogo: 'img', logo: require('../src/assets/devops-logo.png'), oneStar: 3, halfStar: 0, emptyStar: 2},
 ];
 
