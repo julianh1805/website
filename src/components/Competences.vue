@@ -7,12 +7,17 @@
             Un passion qui va du front... au back
           </a>
         </h1>
-        <p class="description">Malgré ma passion pour le front, mon arrivée à EPSI m'a permis de découvrir et apprécier la façon d'affronter les complexités auxquelles on peut se confronter lors du développement d'un back-end. J'aime le défi. De plus, je suis non seulement passioné par les langages mais aussi par tout ce qui entoure un projet informatique :
-          la gestion de projet (en agile ou en V) passant par la conception puis aussi par les tests (surprise !). J'ai aussi un petit coup de foudre pour le monde DevOps, je mets en place tous les jours les pratiques CI/CD (à l'aide d'outils tels Gitlab et CircleCI sur Github).
-          Passioné par la creation des sites/applications dont leur noyau devrait être l'expérience utilisateur, j'ai très présent les notions de responsive design, PWA et First Mobile.
-          <br>Hors informatique, j'ai des compétences en design graphique (maquettes, création de logo et bannières), en référencement ainsi qu'un gôut pour les langues. Je parle français, espagnol, catalan et anglais courament et une compétence avancée en italien !
+        <p class="description">Malgré ma passion pour le front, mon arrivée à EPSI m'a permis de découvrir et apprécier la façon d'affronter les complexités auxquelles on peut se confronter lors du développement d'un back-end. En effet, j'aime le défi. De plus, je suis non seulement passioné par les langages mais aussi par tout ce qui entoure un projet informatique :
+          la <b>gestion de projet</b> (en agile ou en V) passant par la <b>conception</b> puis aussi par les <b>tests</b> (surprise !). J'ai aussi un petit coup de foudre pour le monde <b>DevOps</b>, je mets en place tous les jours les pratiques <b>CI/CD</b> (à l'aide d'outils tels que .git, Gitlab et CircleCI sur Github).
+          Passioné par la creation de site et applications Web dont leur noyau devrait être l'expérience utilisateur, j'ai très présent les notions de <b>responsive design, PWA et First Mobile</b>.
+          <br>Hors du champ purement informatique, j'ai des compétences en <b>design graphique</b> (maquettes, création de logo et bannières) ainsi qu'en <b>référencement</b>. Je suis aussi et surtout passioné par les <b>langues</b>. Je parle français
+          <transition name="slide" mode="out-in">
+            <span :key="langue">
+              {{ langue }}
+            </span>
+          </transition>
         </p>
-      </div>
+        </div>
       <section class="section-diamonds">
         <DiamondsSm v-if="windowWidth < 1276"></DiamondsSm>
         <DiamondsLg v-else></DiamondsLg>
@@ -33,29 +38,56 @@ export default {
   data() {
     return {
       open : false,
-      windowWidth: window.innerWidth
+      windowWidth: window.innerWidth,
+      index: 0,
+      langue: null,
+      langues: ["but also English", "y también español", "i també català", "e anche italiano"]
     }
   },
   beforeMount(){
     this.windowWidth = window.innerWidth;
+    this.langue = this.langues[0];
   },
   mounted() {
     window.onresize = () => {
       this.windowWidth = window.innerWidth;
     }
+    setInterval(() => {
+      this.langue = this.langues[this.index];
+      this.index = this.index < 3 ? this.index + 1 : 0;
+    }, 3000);
   },
 }
 </script>
 
 <style lang="scss" scoped>
-.hover {
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-}
 #competences {
   margin-top: 100px;
   h1{
     font-size: 36px;
+  }
+
+  .hover {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  .slide-enter-from{
+    opacity: 0;
+  }
+
+  .slide-enter-to{
+    opacity: 1;
+  }
+
+  .slide-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-leave-active {
+    opacity: 0;
   }
 }
 
@@ -79,7 +111,7 @@ export default {
   0% { opacity: 0; position: relative; top: -100px; }
   40% { opacity: 0; position: relative; top: -60px;}
   80% { opacity: 0.8;}
-  99% { position: relative; top: 0px;}
+  99% { position: relative; top: 0;}
   100% { opacity: 1; position: initial; }
 }
 
