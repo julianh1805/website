@@ -147,7 +147,6 @@ export default {
       }
     }
   }
-
 }
 
 @media (min-width: 276px) {

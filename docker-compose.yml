@@ -6,13 +6,13 @@ services:
       context: .
       dockerfile: docker-images/Dockerfile
     ports:
-      - '80'
+      - '3000'
     labels:
       - 'traefik.enable=true'
       - 'traefik.http.routers.website-app.rule=Host(`julian-husson.com`)'
       - "traefik.http.routers.website-app.entrypoints=web"
       - "traefik.http.routers.website-app.service=website-app"
-      - "traefik.http.services.website-app.loadbalancer.server.port=80"
+      - "traefik.http.services.website-app.loadbalancer.server.port=3000"
     networks:
       - web
 networks:
