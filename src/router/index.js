@@ -28,7 +28,7 @@ const routes = [
     name: 'Qualites',
     component: Qualites,
     meta: {
-      title: 'Angular, Java... une passion qui va du front au back | Julian Husson'
+      title: 'Angular, Java, Docker... une passion qui va du front au back | Julian Husson'
     }
   },
   {
