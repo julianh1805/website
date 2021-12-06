@@ -27,7 +27,7 @@
           <p>Cool ! Votre message a bien été envoyé. Si je mets trop de temps à repondre, vous pouvez me trouver tous les soirs au Bar Bière Numéro 8</p>
         </div>
         <div id="cordonnees">
-          <hr class="lg-separator" v-if="windowWidth < 768">
+          <div class="grid">
           <div class="item">
             <a target="_blank" href="https://www.google.com/maps?channel=trow5&client=firefox-b-d&q=google+map+nantes+44300&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj0jaOey6T0AhUE3IUKHUaYAGkQ_AUoAXoECAEQAw">
             <span>
@@ -51,6 +51,7 @@
             </span>
             <p>husson.j@yahoo.com</p>
             </a>
+          </div>
           </div>
         </div>
       </section>
@@ -125,52 +126,58 @@ export default {
       }
     }
   }
+
   #cordonnees{
-    display: flex;
-    .item{
-      padding-bottom: 36px;
-      width: 70%;
-      &:hover{
-        transition-duration: 600ms;
-        transform: scale(1.05);
-        cursor: pointer;
-        span{
-          color: $font-wbg-hover-color!important;
+    .grid{
+      .item{
+        padding: 20px 0;
+        background: white;
+        &:hover{
           transition-duration: 600ms;
-        }
-      }
-      &:not(:last-child){
-        p{
-          padding-bottom: 20px;
-          border-bottom: 1px solid #86a1cd;
-          margin: auto;
+          cursor: pointer;
+          span{
+            color: $font-wbg-hover-color!important;
+            transition-duration: 600ms;
           }
         }
-      span{
-        color: $main-color;
-        font-size: 28px;
+        span{
+          color: $main-color;
+          font-size: 28px;
+        }
       }
     }
   }
+
 }
 
 @media (min-width: 276px) {
   #content {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
   #cordonnees{
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    .grid{
+      display: grid;
+      margin: auto;
+      grid-template-columns: repeat(1, 1fr);
+      background: $main-color;
+      grid-gap: 1px;
+      width: 80%;
+    }
   }
 }
+
+@media (min-width: 276px) and (max-width: 767px){
+  #cordonnees {
+    margin-top: 40px;
+  }
+}
+
 
 @media (min-width: 524px) {
   #content {
     grid-template-columns: repeat(1, 1fr);
   }
   #cordonnees{
-    justify-content: space-between;
   }
 }
 
@@ -180,9 +187,15 @@ export default {
     justify-content: space-between;
   }
   #cordonnees{
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: initial;
+    justify-content: end;
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      background: $main-color;
+      grid-gap: 1px;
+      max-height: 330px;
+      width: 80%;
+    }
   }
 }
 </style>
