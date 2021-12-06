@@ -15,13 +15,13 @@
               Développeur full stack junior en région nantaise. "Mes lignes de code définissent qui je suis"
             </a>
           </h1>
-          <p class="description">Après plus de 10 ans passés en Espagne et passionné de la technologie et de l'informatique depuis tout jeune, j'ai décidé de
-            revenir en France pour poursuivre mes études dans le but de devenir développeur full stack.
+          <p class="description">Après plus de 10 ans passés en Espagne et <b>passionné</b> de la technologie et de l'informatique depuis tout jeune, j'ai décidé de
+            revenir en France pour poursuivre mes études dans le but de devenir développeur Web.
           </p>
           <br>
           <p class="description">
-            Ayant obtenu un titre en tant que "Chef de projet digital" en 2020 qui m'a permis de découvir les différents métiers du Web (chef de projet, design graphique, référencement) et en ayant appris le développement Web de façon totalement autodidacte (cours sur Udemy, Youtube, projets personnels)
-            j'ai décidé de poursuivre mes études en ingénierie informatique. Je suis actuellement (et depuis 3 ans) développeur Web au sein de <a href="https://biogasview.com" target="_blank">Biogasview</a>. Ce site Web vous permettra de savoir plus sur mon parcours ainsi que sur ma personnalité...
+            Ayant obtenu un titre en tant que "Chef de projet digital" en 2020 qui m'a permis de découvir les différents métiers du Web (chef de projet, design graphique, référencement) et en ayant appris le développement Web de façon totalement <b>autodidacte</b> (cours sur Udemy, Youtube, projets personnels)
+            j'ai décidé de poursuivre mes études en ingénierie informatique. Je suis actuellement (et depuis 3 ans) développeur Web au sein de <a href="https://biogasview.com" target="_blank">Biogasview</a>. Ce site Web vous permettra de savoir plus sur mon parcours ainsi que sur ma <b>personnalité</b>.
           </p>
           <div class="cta">
             <button class="draw-main trans-main to-formation" @click="goToRoute('formation-et-experiences')">Découvrir mon palmarès</button>
