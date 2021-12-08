@@ -20,8 +20,8 @@
           <p class="terminal_prompt terminal_prompt-cd-julianh">$ <span class="terminal_prompt-typing"><span class="cover cover-cd-julianh"></span>cd Julianh1805</span></p>
           <p class="terminal_prompt terminal_prompt-checkout-projets">/Projets</p>
           <p class="terminal_prompt terminal_prompt-cd-project">$ <span class="terminal_prompt-typing"><span class="cover cover-cd-project"></span>cd Projets</span></p>
-          <p class="terminal_prompt terminal_prompt-pub">Pour découvir l'ensemble n'hésitez pas à visiter mon GitHub : <span class="terminal_window-highlight"><a href="https://github.com/julianh1805">https://github.com/julianh1805/</a></span>
-            ou vous pouvez directement <span class="terminal_window-highlight"><a @click="goToContact()">me contacter</a></span></p>
+          <p class="terminal_prompt terminal_prompt-pub">Pour découvir l'ensemble de mes projets n'hésitez pas à visiter mon GitHub : <span class="terminal_window-highlight"><a href="https://github.com/julianh1805">https://github.com/julianh1805/</a></span>
+            ou directement <span class="terminal_window-highlight"><a @click="goToContact()">me contacter</a></span></p>
         </div>
       </div>
     </div>

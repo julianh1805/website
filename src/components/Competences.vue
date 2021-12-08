@@ -41,7 +41,7 @@ export default {
       windowWidth: window.innerWidth,
       index: 0,
       langue: null,
-      langues: ["but also English", "y también español", "i també català", "e anche italiano"]
+      langues: ["but also English.", "y también español.", "i també català.", "e anche italiano."]
     }
   },
   beforeMount(){

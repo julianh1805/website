@@ -122,14 +122,12 @@ export default {
             transform: translate(15px, 0);
             border-left: 2px solid #f6f666;
           }
-
           .logo{
             margin-right: 5px;
             img{
               width: 40px;
             }
           }
-
           .data{
             .delivre{
               margin-top: 5px;
