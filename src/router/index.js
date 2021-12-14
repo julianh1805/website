@@ -11,7 +11,7 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'Développeur full-stack junior en région nantaise | Julian Husson',
+      title: 'Développeur full stack junior en région nantaise | Julian Husson',
       description: "fezfzfezz"
     }
   },
@@ -20,7 +20,7 @@ const routes = [
     name: 'FormationExperiences',
     component: FormationExperiences,
     meta: {
-      title: 'Un long parcours pour devenir un meilleur développeur full-stack | Julian Husson'
+      title: 'Un long parcours pour devenir un meilleur développeur full stack | Julian Husson'
     }
   },
   {

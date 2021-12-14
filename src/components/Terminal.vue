@@ -58,6 +58,10 @@ export default {
     color: #0091eb;
   }
 
+  a:hover{
+    cursor: pointer;
+  }
+
   p{
     color: white;
   }
