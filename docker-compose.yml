@@ -7,6 +7,8 @@ services:
       dockerfile: docker-images/Dockerfile
     ports:
       - '3000'
+    env_file:
+      - .env
     labels:
       - 'traefik.enable=true'
       - 'traefik.http.routers.website-app.rule=Host(`julian-husson.com`)'
