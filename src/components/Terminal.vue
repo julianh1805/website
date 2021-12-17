@@ -9,9 +9,9 @@
       <div class="terminal">
         <div class="terminal_task-bar">
           <div class="terminal-buttons">
-          <div class="terminal_circle terminal_circle-red"><img alt="icon close" :src="require('../assets/close-icon.png')"/></div>
-          <div class="terminal_circle terminal_circle-yellow"><img alt="icon minus" :src="require('../assets/minus-icon.png')"/></div>
-          <div class="terminal_circle terminal_circle-green"><img alt="icon resize" :src="require('../assets/resize-icon.png')"/></div>
+          <div class="terminal_circle terminal_circle-red"><img alt="icon close" :src="require('../assets/close-icon.webp')"/></div>
+          <div class="terminal_circle terminal_circle-yellow"><img alt="icon minus" :src="require('../assets/minus-icon.webp')"/></div>
+          <div class="terminal_circle terminal_circle-green"><img alt="icon resize" :src="require('../assets/resize-icon.webp')"/></div>
           </div>
           <p class="terminal-path">MBP de Julian</p>
         </div>

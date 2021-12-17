@@ -6,7 +6,7 @@
         <hr class="sm-separator">
       </div>
       <div class="content">
-        <img alt="capture cv" :src="require('../assets/cv.png')">
+        <img alt="capture cv" :src="require('../assets/cv.webp')">
         <div>
           <p>Pour les plus traditionnels, vous pouvez obtenir et partager mon <i>Curriculum Vitae</i> en cliquant sur le bouton ci-dessous.<br>Attention ! Il reste que *** unités.</p>
           <div class="cta center">

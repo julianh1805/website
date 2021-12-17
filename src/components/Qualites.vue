@@ -26,10 +26,10 @@ export default {
   data(){
     return {
       qualites: [
-        {img: require('../assets/ambition-determine-icon.png'), titre: 'Ambitieux et determiné', description: 'Les rêves sont comme les buts. C\'est bien d\'en vouloir, mais il faut se les procurer'},
-        {img: require('../assets/force-proposition-icon.png'), titre: 'Fort de proposition', description: 'J\'aime bien découvrir, apprendre, appliquer et partager. Dans cet ordre'},
-        {img: require('../assets/teamwork-icon.png'), titre: 'Esprit d\'équipe', description: 'Même si je suis un loup solitaire, je ne suis rien sans les personnes qui m\'entourent'},
-        {img: require('../assets/overwork-icon.png'), titre: '(Trop) perfectioniste', description: 'A force de vouloir observer de trop près les étoiles, on risque de s\'aveugler'}
+        {img: require('../assets/ambition-determine-icon.webp'), titre: 'Ambitieux et determiné', description: 'Les rêves sont comme les buts. C\'est bien d\'en vouloir, mais il faut se les procurer'},
+        {img: require('../assets/force-proposition-icon.webp'), titre: 'Fort de proposition', description: 'J\'aime bien découvrir, apprendre, appliquer et partager. Dans cet ordre'},
+        {img: require('../assets/teamwork-icon.webp'), titre: 'Esprit d\'équipe', description: 'Même si je suis un loup solitaire, je ne suis rien sans les personnes qui m\'entourent'},
+        {img: require('../assets/overwork-icon.webp'), titre: '(Trop) perfectioniste', description: 'A force de vouloir observer de trop près les étoiles, on risque de s\'aveugler'}
       ],
     }
   },
@@ -53,6 +53,7 @@ export default {
              color: $font-main-title-color;
              font-size: 18px;
              margin: 8px 0;
+             font-weight: 600;
            }
            img{
              width: 84px;

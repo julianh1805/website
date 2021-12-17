@@ -2,7 +2,7 @@
     <div class="container">
       <nav id="navbar">
         <div class="resp-flex">
-          <img alt="logo hj" class="logo" @click="goToRoute('/')" :src="require('../assets/logo-hj.png')"/>
+          <img alt="logo hj" class="logo" @click="goToRoute('/')" :src="require('../assets/logo-hj.webp')"/>
           <div v-if="windowWidth < 768" id="burger-menu">
             <label for="check">
               <input type="checkbox" id="check" v-model="open" @click.stop="open = !open"/>
@@ -138,6 +138,7 @@ export default {
       padding: 3px 0;
       text-decoration: none;
       text-align: center;
+      font-weight: 400;
       &:not(.resume){
         color: $font-wbg-color;
         &:hover{
