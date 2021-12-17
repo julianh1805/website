@@ -9,20 +9,15 @@
 }
 
 body {
-  font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 }
 
-#app{
+#app, textarea, input{
   font-family: Avenir, sans-serif;
 }
 
 a{
   text-decoration: none;
-}
-
-textarea, input{
-  font-family: Avenir, sans-serif;
 }
 
 .ta-c{
@@ -37,7 +32,11 @@ textarea, input{
 h1, h1 a{
   color: $font-main-title-color;
   margin-bottom: $spacement-between;
-  font-weight: 800;
+  font-weight: 700;
+}
+
+.section h2.title {
+  font-weight: 600;
 }
 
 p{

@@ -10,10 +10,10 @@
     </div>
     <div class="container">
         <div id="rrss">
-          <a href="https://www.linkedin.com/in/julian-husson-692067152/" target="_blank"><img alt="logo linkedin" class="logo" :src="require('../assets/linkedin-logo.png')" /></a>
-          <a href="https://github.com/julianh1805" target="_blank"><img alt="logo github" class="logo" :src="require('../assets/github-logo.png')" /></a>
-          <a href="https://www.malt.ch/profile/julianhusson" target="_blank"><img alt="logo malt" class="logo" :src="require('../assets/malt-logo.png')" /></a>
-          <a href="https://codepen.io/Julianh1805" target="_blank"><img alt="logo codepen" class="logo" :src="require('../assets/codepen-logo.png')" /></a>
+          <a href="https://www.linkedin.com/in/julian-husson-692067152/" target="_blank"><img alt="logo linkedin" class="logo" :src="require('../assets/linkedin-logo.webp')" /></a>
+          <a href="https://github.com/julianh1805" target="_blank"><img alt="logo github" class="logo" :src="require('../assets/github-logo.webp')" /></a>
+          <a href="https://www.malt.ch/profile/julianhusson" target="_blank"><img alt="logo malt" class="logo" :src="require('../assets/malt-logo.webp')" /></a>
+          <a href="https://codepen.io/Julianh1805" target="_blank"><img alt="logo codepen" class="logo" :src="require('../assets/codepen-logo.webp')" /></a>
         </div>
       <hr class="separator">
       <p class="copyright ta-c">Aucun droit réservé, servez-vous © Julian Husson {{ new Date().getFullYear() }}</p>

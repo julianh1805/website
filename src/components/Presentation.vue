@@ -4,9 +4,9 @@
       <div class="presentation">
         <div class="presentation-row">
           <div class="anim">
-            <img alt="lucarne top gauche" class="corner-tl" :src="require('../assets/corner-tl.png')" />
-            <img alt="photo de profil" class="photo-profil" :src="require('../assets/profil.png')" />
-            <img alt="lucarne inférieur droite" class="corner-br" :src="require('../assets/corner-br.png')" />
+            <img alt="lucarne top gauche" class="corner-tl" :src="require('../assets/corner-tl.webp')" />
+            <img alt="photo de profil" class="photo-profil" :src="require('../assets/profil.webp')" />
+            <img alt="lucarne inférieur droite" class="corner-br" :src="require('../assets/corner-br.webp')" />
           </div>
         </div>
         <div class="presentation-row">

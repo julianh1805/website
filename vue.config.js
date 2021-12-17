@@ -1,4 +1,14 @@
 module.exports = {
+    pluginOptions: {
+        compression:{
+            gzip: {
+                filename: '[file].gz[query]',
+                algorithm: 'gzip',
+                include: /\.(js|css|html|svg|json)(\?.*)?$/i,
+                minRatio: 0.8,
+            }
+        }
+    },
     devServer: {
         disableHostCheck: true
     },
