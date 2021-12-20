@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  website-app:
+  website:
     container_name: website
     build:
       context: .
@@ -11,10 +11,10 @@ services:
       - .env
     labels:
       - 'traefik.enable=true'
-      - 'traefik.http.routers.website-app.rule=Host(`julian-husson.com`)'
-      - "traefik.http.routers.website-app.entrypoints=web"
-      - "traefik.http.routers.website-app.service=website-app"
-      - "traefik.http.services.website-app.loadbalancer.server.port=3000"
+      - "traefik.http.routers.website.rule=Host(`julian-husson.com`)"
+      - "traefik.http.routers.website.entrypoints=websecure"
+      - "traefik.http.routers.website.tls.certresolver=resolver"
+      - "traefik.http.services.website.loadbalancer.server.port=3000"
     networks:
       - web
 networks:
