@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import FormationExperiences from '../views/FormationExperiences.vue'
 import Contact from '../views/Contact.vue'
 import Qualites from '../views/Qualites.vue'
+import Confidentialite from '../views/Confidentialite.vue'
 import Page404 from "../views/Page404";
 
 const routes = [
@@ -37,6 +38,14 @@ const routes = [
     component: Contact,
     meta: {
       title: 'Vous voulez plus d\'information sur moi ? Echangeons ensemble ! | Julian Husson'
+    }
+  },
+  {
+    path: '/politique-de-confidentialite',
+    name: 'PolitiqueConfidentialite',
+    component: Confidentialite,
+    meta: {
+      title: 'Politique de confidentialité | Julian Husson'
     }
   },
   {

@@ -16,7 +16,7 @@
           <a href="https://codepen.io/Julianh1805" target="_blank"><img alt="logo codepen" class="logo" :src="require('../assets/codepen-logo.webp')" /></a>
         </div>
       <hr class="separator">
-      <p class="copyright ta-c">Aucun droit réservé, servez-vous © Julian Husson {{ new Date().getFullYear() }}</p>
+      <p class="copyright ta-c"><a @click="goToPrivacy()">Politique de confidentialité</a> • Aucun droit réservé, servez-vous © Julian Husson {{ new Date().getFullYear() }}</p>
     </div>
   </div>
 </template>
@@ -24,6 +24,11 @@
 <script>
 export default {
   name: 'Footer',
+  methods:{
+    goToPrivacy(){
+      this.$router.push({ path: "/politique-de-confidentialite" })
+    },
+  }
 }
 </script>
 
@@ -72,6 +77,9 @@ export default {
   .copyright{
     font-size: 14px;
     margin-bottom: 15px;
+    a:hover{
+      cursor: pointer;
+    }
   }
 }
 

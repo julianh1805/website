@@ -1,12 +1,30 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import VueMatomo from 'vue-matomo';
 
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 
 
 const app = createApp(App);
+app.use(VueMatomo, {
+    host: "https://matomo.julian-husson.com/",
+    siteId: 1,
+    trackerFileName: 'matomo',
+    router: router,
+    enableLinkTracking: true,
+    requireConsent: false,
+    trackInitialView: true,
+    disableCookies: false,
+    enableHeartBeatTimer: false,
+    heartBeatTimerInterval: 15,
+    debug: false,
+    userId: undefined,
+    cookieDomain: undefined,
+    domains: undefined,
+    preInitActions: []
+});
 app.use(router).mount('#app');
 app.config.globalProperties.$languages = [
     { title: 'Angular', highlight: true, typeLogo: 'i', logo: 'fab fa-angular', oneStar: 4, halfStar: 1, emptyStar: 0},
