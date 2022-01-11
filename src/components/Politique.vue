@@ -33,7 +33,7 @@
         sont obligatoires sont invités à nous contacter via <b>husson.j@yahoo.com</b>.</p>
       <h2>Autorisation :</h2>
       <p>Vous nous autorisez à traiter vos données personnelles dès lors que vous cochez la case qui nous autorise de manière expresse à traiter les données que vous nous remettez.</p>
-      <iframe style="border: 0; height: 200px; width: 600px;"
+      <iframe style="border: 0; height: 200px; width: 100%;"
               src="https://matomo.julian-husson.com/index.php?module=CoreAdminHome&action=optOut&language=fr&backgroundColor=&fontColor=&fontSize=&fontFamily="></iframe>
       <h2>Vos droits :</h2>
       <p>Si vous êtes un résident européen, vous disposez des droits suivants liés à vos données personnelles :</p>
