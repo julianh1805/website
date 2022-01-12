@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-    <div id="full-bg">
+    <div id="full-bg" v-if="route.name && route.name != 'PolitiqueConfidentialite'">
       <div class="center ta-c">
         <h2 class="yellow-hook">C'est le moment de faire connaisance. <br>Faites le premier pas</h2>
         <p class="pub">(malgré les apparences, cet espace n'est pas sponsorisé par Ikea)</p>
@@ -22,8 +22,14 @@
 </template>
 
 <script>
+import { useRoute } from 'vue-router';
+
 export default {
   name: 'Footer',
+  setup() {
+    const route = useRoute();
+    return { route };
+  },
   methods:{
     goToPrivacy(){
       this.$router.push({ path: "/politique-de-confidentialite" })
@@ -90,6 +96,7 @@ button{
 
 .draw {
   transition: color 0.25s;
+  margin-right: 0;
 
   &::before,
   &::after {
@@ -135,4 +142,12 @@ button{
         height 0.25s ease-out 0.75s;
   }
 }
+
+@media (min-width: 276px) and (max-width: 859px){
+  .draw{
+    width: 100%;
+  }
+
+}
+
 </style>
