@@ -70,6 +70,7 @@ export default {
   h1, h1 a {
     font-size: 36px;
     text-align: center;
+    margin-bottom: 36px;
   }
   h2{
     font-size: 24px;
