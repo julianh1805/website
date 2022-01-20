@@ -35,7 +35,7 @@ export default {
   data() {
     return {
       experiences : [
-        { id: "bgw", image: require('../assets/biogasview-logo.webp'), entreprise: 'Biogasview', date: '2019 - présent (alternance)', poste: 'Développeur full stack', description: "Evolution de l'ERP<br>Participer a l'amélioration de l'expérience utilisateur de la plateforme Web<br>Assister les utilisateurs (maintenance corrective)<br>Refonte du site internet (Wordpress)"},
+        { id: "bgw", image: require('../assets/biogasview-logo.webp'), entreprise: 'Biogasview', date: '2019 - présent (alternance)', poste: 'Développeur full stack', description: "Evolution de l'ERP (Angular/Java)<br>Participer a l'amélioration de l'expérience utilisateur de la plateforme Web<br>Assister les utilisateurs (maintenance corrective)<br>Refonte du site internet (Wordpress)"},
         { id: "bgw", image: require('../assets/malt-logo.webp'), entreprise: 'Malt', date: '2018 - 2019', poste: 'Développeur Web freelance', description: "Dans le but de m'améliorer et de m'aventurer dans le monde professionnel, j'ai effectué des missions en freelance, principalement sur la plateforme Malt.<br>Développement de sites Wordpress pour entreprises, ainsi que portfolios et blogs pour particuliers."},
         { id: "bgw", image: require('../assets/iraiser-logo.webp'), entreprise: 'iRaiser', date: '2018', poste: 'Support technique et recette informatique (stage)', description: "Stage de support technique et recette informatique consistant à:<br>Assister les utilisateurs dans l'utilisation d'un CMS<br>Effectuer les paramétrages<br>Recetter les applications"},
       ],
