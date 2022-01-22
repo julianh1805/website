@@ -4,7 +4,7 @@
       <div class="section-main">
         <h1>
           <a class="r-link animated-underline animated-underline">
-            Bienvenues à mon palmarès scolaire
+            Bienvenue à mon palmarès scolaire
           </a>
         </h1>
       </div>
