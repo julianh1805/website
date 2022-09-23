@@ -24,7 +24,7 @@
         </form>
         <LoadingSpinner v-if="loading"></LoadingSpinner>
         <div class="centered" v-if="!loading && send">
-          <p>Cool ! Votre message a bien été envoyé. Si je mets trop de temps à repondre, vous pouvez me trouver tous les soirs au Bar Bière Numéro 8</p>
+          <p>Cool ! Votre message a bien été envoyé. Si je mets trop de temps à repondre, vous pouvez me trouver tous les soirs au Bar Bière Numéro 8.</p>
         </div>
         <div id="cordonnees">
           <div class="grid">

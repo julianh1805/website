@@ -11,7 +11,7 @@
           <p>Pour les plus traditionnels, vous pouvez obtenir et partager mon <i>Curriculum Vitae</i> en cliquant sur le bouton ci-dessous.<br>Attention ! Il reste que *** unités.</p>
           <div class="cta center">
             <a href="./cv_julian-husson.pdf" download>
-            <button class="draw-main trans-main to-home">Telecharger mon CV</button>
+            <button class="draw-main trans-main to-home">Télécharger mon CV</button>
             </a>
           </div>
         </div>

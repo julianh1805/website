@@ -12,16 +12,17 @@
         <div class="presentation-row">
           <h1>
             <a class="r-link animated-underline animated-underline">
-              Développeur full stack junior en région nantaise. "Mes lignes de code définissent qui je suis"
+              Développeur full stack en région nantaise.<br>"Mes lignes de code définissent qui je suis"
             </a>
           </h1>
-          <p class="description">Après plus de 10 ans passés en Espagne et <b>passionné</b> de la technologie et de l'informatique depuis tout jeune, j'ai décidé de
-            revenir en France pour poursuivre mes études dans le but de devenir développeur Web.
+          <p class="description">
+            Développeur Angular/Java <b>passionné</b> par le développement d'applications Web, j'ai aussi une appétence pour tout ce qui entoure les projets informatiques :
+            de la gestion de projet, passant par les tests jusqu'au déploiement.
           </p>
           <br>
           <p class="description">
-            Ayant obtenu un titre en tant que "Chef de projet digital" en 2020 qui m'a permis de découvir les différents métiers du Web (chef de projet, design graphique, référencement) et en ayant appris le développement Web de façon totalement <b>autodidacte</b> (cours sur Udemy, Youtube, projets personnels)
-            j'ai décidé de poursuivre mes études en ingénierie informatique. Je suis actuellement (et depuis 3 ans) développeur Web au sein de <a href="https://biogasview.com" target="_blank">Biogasview</a>. Ce site Web vous permettra de savoir plus sur mon parcours ainsi que sur ma <b>personnalité</b>.
+            Après plus de 10 ans passés en Espagne j'ai décidé de revenir en France pour poursuivre mes études dans le but de devenir développeur Web.
+            Grâce à l'obtention d'un titre en tant que "Chef de projet digital" en 2020 qui m'a permis de découvir les différents métiers du Web et en ayant appris le développement Web de façon totalement <b>autodidacte</b> (cours sur Udemy, Youtube, projets personnels), j'ai décidé de me spécialiser dans ce domaine au sein de EPSI, établissement où j'ai obtenu mon titre d'ingenieur expert en informatique et systèmes d'information en août 2022. Aujourd'hui j'évolue en tant que développeur full stack au sein de <a href="https://biogasview.com" target="_blank">Biogasview</a>. Ce site Web vous permettra de savoir plus sur mon parcours ainsi que sur ma <b>personnalité</b>.
           </p>
           <div class="cta">
             <button class="draw-main trans-main to-formation" @click="goToRoute('formation-et-experiences')">Découvrir mon palmarès</button>
