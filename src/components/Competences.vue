@@ -8,7 +8,7 @@
           </a>
         </h1>
         <p class="description">Au-delà de ma passion pour le front, mon arrivée à EPSI m'a permis de découvrir et apprécier la façon d'affronter les complexités auxquelles on peut se confronter lors du développement d'un back-end. En effet, j'aime le défi. De plus, je suis non seulement passioné par les langages mais aussi par tout ce qui entoure un projet informatique :
-          la <b>gestion de projet</b> (en agile ou en V) passant par la <b>conception</b> puis aussi par les <b>tests</b> (surprise !). J'ai aussi un petit coup de foudre pour le monde <b>DevOps</b>, je mets en place tous les jours les pratiques <b>CI/CD</b> (à l'aide d'outils tels que .git, Gitlab et CircleCI sur Github).
+          la <b>gestion de projet</b> (en agile ou en V) passant par la <b>conception</b> puis aussi par les <b>tests</b> (surprise !). J'ai aussi un petit coup de foudre pour le monde <b>DevOps</b>, je mets en place tous les jours les pratiques <b>CI/CD</b> (à l'aide d'outils tels que .git, Gitlab et Github Actions).
           Passioné par la creation de site et applications Web dont leur noyau devrait être l'expérience utilisateur, je garde à l'ésprit les notions de <b>responsive design, PWA et First Mobile</b>.
           <br>Hors du champ purement informatique, j'ai des compétences en <b>design graphique</b> (maquettes, création de logo et bannières) ainsi qu'en <b>référencement</b>. Je suis aussi et surtout passioné par les <b>langues</b>. Je parle français
           <transition name="slide" mode="out-in">

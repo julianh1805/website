@@ -11,7 +11,7 @@
     <div class="grid">
       <div class="row certifications">
         <div class="section">
-          <h2 class="title">Certifications</h2>
+          <h2 class="title">Diplômes et certifications</h2>
           <hr class="sm-separator">
         </div>
           <div class="list-certif">
@@ -39,7 +39,7 @@
               <br>
               <p class="description" v-html="form.description">
               </p>
-              <hr v-if="index != formations.length - 1" class="separator">
+              <hr v-if="index !== formations.length - 1" class="separator">
             </div>
           </div>
         </div>
@@ -57,16 +57,15 @@ export default {
       show: false,
       id: null,
       certifications : [
-        { id: "epsi", image: require('../assets/toeic-logo.webp'), titre: 'TOEIC (825 points)', delivre: 'Délivré par le TOEIC® Program en juillet 2021'},
+        { id: "epsi", image: require('../assets/epsi-logo.webp'), titre: 'Expert en informatique et systèmes d\'information', delivre: 'Délivré par l\'Ecole privée des sciences informatiques en août 2022'},
         { id: "wis", image: require('../assets/wis-logo.webp'), titre: 'Chef de projet digital', delivre: 'Délivré par WIS Nantes Program en octobre 2020'},
-        { id: "wis", image: require('../assets/ministere-france-logo.webp'), titre: 'Concepteur développeur d\'applications Niveau II', delivre: 'Délivré par le Ministère du travail en juillet 2020'},
-        { id: "wis", image: require('../assets/ministere-france-logo.webp'), titre: 'Développeur web et web mobile Niveau III', delivre: 'Délivré par le Ministère du travail en juin 2020'},
-        { id: "wis", image: require('../assets/certification-voltaire-logo.webp'), titre: 'Certification voltaire (775 points)', delivre: 'Délivré par Projet Voltaire en février 2019'},
-        { id: "iesb", image: require('../assets/ies-bendinat-logo.webp'), titre: 'Double délivrance du baccalauréat', delivre: 'Délivré par le Ministère de l’Education Nationale  en juin 2017'}
+        { id: "wis", image: require('../assets/ministere-france-logo.webp'), titre: 'Concepteur développeur d\'applications', delivre: 'Délivré par le Ministère du travail en juillet 2020'},
+        { id: "wis", image: require('../assets/ministere-france-logo.webp'), titre: 'Développeur web et web mobile', delivre: 'Délivré par le Ministère du travail en juin 2020'},
+        { id: "iesb", image: require('../assets/ies-bendinat-logo.webp'), titre: 'Double délivrance du baccalauréat', delivre: 'Délivré par le Ministère de l’Education Nationale en juin 2017'}
       ],
       formations : [
-        { id: "epsi", image: require('../assets/epsi-logo.webp'), ecole: 'EPSI', diplome: 'Expert en Informatique et Système d’Information, Ingénierie informatique', annee: '2020-2022 (en cours)', description: "Études & Développement : <br>- Gérer des projets de conception de solutions applicatives dans un environnement agile <br>- Concevoir et développer des solutions applicatives mobiles et embarquées <br>- Concevoir des solutions utilisant l’intelligence artificielle <br>- Concevoir une architecture de Business Intelligence <br>- Gérer et optimiser un système d’information"},
-        { id: "wis", image: require('../assets/wis-logo.webp'), ecole: 'WIS', diplome: 'Gestion du Web / multimédia et webmaster', annee: '2017-2020', description: "Conception & Intégration d'Applications web & mobiles :<br>- Développement Front-end Web<br>- Serveur Web & Pilotage page web<br><br>Communication Digitale & Stratégie Relation Clients :<br>- Communication digitale & Réseaux sociaux<br>- Création et Gestion de contenus<br>- Relation Clients<br><br>Marketing Digital & Analyses de Données :<br>- Marketing & Référencement- Gestion de Données<br><br>Méthodes & Projets :<br>- Environnement Economique & Juridique<br>- Anglais & Communication"},
+        { id: "epsi", image: require('../assets/epsi-logo.webp'), ecole: 'EPSI', diplome: 'Expert en informatique et systèmes d\'information, Ingénierie informatique', annee: '2020-2022', description: "Études & Développement : <br>- Gérer des projets de conception de solutions applicatives dans un environnement agile <br>- Concevoir et développer des solutions applicatives mobiles et embarquées <br>- Concevoir des solutions utilisant l’intelligence artificielle <br>- Concevoir une architecture de Business Intelligence <br>- Gérer et optimiser un système d’information"},
+        { id: "wis", image: require('../assets/wis-logo.webp'), ecole: 'WIS', diplome: 'Chef de projet digital, Expertise digitale', annee: '2017-2020', description: "Conception & Intégration d'Applications web & mobiles :<br>- Développement Front-end Web<br>- Serveur Web & Pilotage page web<br><br>Communication Digitale & Stratégie Relation Clients :<br>- Communication digitale & Réseaux sociaux<br>- Création et Gestion de contenus<br>- Relation Clients<br><br>Marketing Digital & Analyses de Données :<br>- Marketing & Référencement- Gestion de Données<br><br>Méthodes & Projets :<br>- Environnement Economique & Juridique<br>- Anglais & Communication"},
         { id: "iesb", image: require('../assets/ies-bendinat-logo.webp'), ecole: 'IES Bendinat', diplome: 'Bachibac ES, Économie', annee: '2011-2017', description: "Bachibac (Baccalauréat espagnol reconnu par le Ministère de l’Education Nationale en France) à Majorque (Espagne). <br><br>Le bachibac permet la délivrance simultanée du baccalauréat français et du bachillerato espagnol. Ce diplôme est préparé dans les lycées à section binationale français / espagnol \"bachibac\"."},
       ]
     }
