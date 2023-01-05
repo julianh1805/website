@@ -45,11 +45,11 @@
             </a>
           </div>
           <div class="item">
-            <a href="mailto:husson.j@yahoo.com">
+            <a href="mailto:julian.husson@icloud.com">
             <span>
              <i class="fas fa-envelope"></i>
             </span>
-            <p>husson.j@yahoo.com</p>
+            <p>julian.husson@icloud.com</p>
             </a>
           </div>
           </div>
@@ -93,7 +93,7 @@ export default {
           })
         } catch(error) {
           this.loading = false;
-          console.log({error})
+          console.log(error.message)
         }
       }
     }

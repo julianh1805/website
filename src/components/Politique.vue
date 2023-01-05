@@ -14,7 +14,7 @@
       <p>Qui est responsable du traitement de vos données ?</p>
       <p>Personne physique : Julian Husson</p>
       <p>Adresse : 19 Mail Haroun Tazieff, 44300, Nantes</p>
-      <p>Contact : husson.j@yahoo.com | 06 85 48 79 66</p>
+      <p>Contact : julian.husson@icloud.com | 06 85 48 79 66</p>
       <h2>Les informations personnelles que nous collectons :</h2>
       <p>Lorsque vous visitez le <b>julian-husson.com</b>, nous recueillons automatiquement certaines informations sur votre appareil, notamment des informations sur votre navigateur web, votre adresse IP,
         votre fuseau horaire et certains des cookies installés sur votre appareil. En outre, lorsque vous naviguez sur le site, nous recueillons des informations sur les pages web ou
@@ -25,7 +25,7 @@
         cela est absolument nécessaire pour maintenir le site web. Les informations collectées automatiquement sont utilisées uniquement pour identifier les cas potentiels d'abus et établir
         des informations statistiques concernant l'utilisation du site web. Ces informations statistiques ne sont pas autrement agrégées de manière à identifier un utilisateur particulier du
         système.<br>Vous pouvez visiter le site web sans nous dire qui vous êtes ni révéler d'informations, par lesquelles quelqu'un pourrait vous identifier comme un individu spécifique et
-        identifiable. Les utilisateurs qui ne savent pas quelles informations sont obligatoires sont invités à nous contacter via <b>husson.j@yahoo.com</b>.</p>
+        identifiable. Les utilisateurs qui ne savent pas quelles informations sont obligatoires sont invités à nous contacter via <b>julian.husson@icloud.com</b>.</p>
       <h2>Autorisation :</h2>
       <p>Vous nous autorisez à traiter vos données personnelles dès lors que vous cochez la case qui nous autorise de manière expresse à traiter les données que vous nous remettez.</p>
       <iframe style="border: 0; height: 200px; width: 100%;"
@@ -53,7 +53,7 @@
         non autorisés des données personnelles sous son contrôle et sa garde. Toutefois, aucune transmission de données sur Internet ou sur un réseau sans fil ne peut être garantie.</p>
       <h2>Informations de contact :</h2>
       <p>Si vous souhaitez nous contacter pour comprendre davantage la présente politique ou si vous souhaitez nous contacter concernant toute question relative aux droits individuels et à
-        vos informations personnelles, vous pouvez envoyer un courriel à <b>husson.j@yahoo.com</b>.</p>
+        vos informations personnelles, vous pouvez envoyer un courriel à <b>julian.husson@icloud.com</b>.</p>
     </div>
   </div>
 </template>
