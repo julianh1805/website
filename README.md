@@ -19,8 +19,8 @@ On my website you will learn all about me and what I do : degrees, certificates,
 
 #### 📲 Get in touch :
 <p align="left">
- <a href="mailto:husson.j@yahoo.com" alt="Yahoo">
-  <img src="https://img.shields.io/badge/-Yahoo-430297?style=flat-square&labelColor=430297&logo=yahoo&logoColor=white&link=husson.j@yahoo.com" /></a>
+ <a href="mailto:julian.husson@icloud.com" alt="Yahoo">
+  <img src="https://img.shields.io/badge/-Yahoo-430297?style=flat-square&labelColor=430297&logo=yahoo&logoColor=white&link=julian.husson@icloud.com" /></a>
   
 <a href="https://www.linkedin.com/in/julian-husson-692067152/" alt="Linkedin">
   <img src="https://img.shields.io/badge/-Linkedin-0e76a8?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/julian-husson-692067152/" /></a>

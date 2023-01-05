@@ -4,7 +4,7 @@
       <div class="center ta-c">
         <h2 class="yellow-hook">C'est le moment de faire connaisance. <br>Faites le premier pas</h2>
         <p class="pub">(malgré les apparences, cet espace n'est pas sponsorisé par Ikea)</p>
-        <a v-if="this.$route.name === 'Contact'" href="mailto:husson.j@yahoo.com"><button class="draw">Contacter Julian Husson</button></a>
+        <a v-if="this.$route.name === 'Contact'" href="mailto:julian.husson@icloud.com"><button class="draw">Contacter Julian Husson</button></a>
         <button v-else class="draw" @click="this.$router.push({ path: '/contact'})">Contacter Julian Husson</button>
       </div>
     </div>
