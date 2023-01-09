@@ -4,7 +4,7 @@
 [![Husson](https://img.shields.io/badge/husson%20-%23323330.svg?&style=for-the-badge&logo=cards%20estrelas&logoColor=black&color=FFFF00)]()
 
 ## 👨 About me
-<p>Hi, I am Julian Husson, actually junior full-stack developer at <a href="https://biogasview.com">biogasview.com</a> and also software engineer student. 
+<p>Hi, I am Julian Husson, actually junior full-stack developer at <a href="https://biogasview.com">biogasview.com</a>. 
 On my website you will learn all about me and what I do : degrees, certificates, skills. Enjoy !</p>
 
 ### My favorite technologies :
